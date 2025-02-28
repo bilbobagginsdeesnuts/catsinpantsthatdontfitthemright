@@ -1,0 +1,593 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c12 doc-content">
+    <p class="c0"><p>Warning, this one has spoilers for the davinci code, angels and demons and the new
+            captain america movie. If any of you care about the fact i spoilt the davinci code i will be furious the
+            lady is the descendant of jesus get over yourself tom hanks has terrible hair no. this is the spoiler
+            warning not my thoughts. Also holy hell did i watch a lot of media this month and have a lot of thoughts
+            about them hot damn</span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.k7otgex3d82y"><span class="c2">Photos</span></h1>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image3.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Started the month at my grandparents place and this is still the fanciest bathroom
+            imaginable that also has 0 privacy, the stairs to the backyard go right past here so you gotta tactcially
+            pee to not get spotted</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image5.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Saw this poster under the train line and got irrationally angry at how nab are
+            encouraging people to start podcasts - theyre a fucking bank they shouldnt be doing that</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image10.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Went to reverse garbage and they never fail to impress with boxes like these</span>
+    </p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image15.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>My brother came back from japan and gave me some stuff but this little casio ring is
+            the most delightful even if it only fits on my pinkie</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image4.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Went to a bar after hadestown where they draw the special for you on a coaster and it
+            is so small and crowded that i didnt hear what it was but ordered it anyway and it turned into jelly
+            eventually which i realised - i don&#39;t like</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image11.jpg"
+                
+                title=""></span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span>Went to a very straight baby shower</span><span
+           ><img
+                alt="" src="images/image9.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Then went to the very gay fair day</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image14.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>3d printed some stands for my watches, i have since done my best to syncronise them
+            as it was bugging me that they were all so far off</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image1.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Went to a taping of guy montgomery guy mont spelling bee, show very good</span></p>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image16.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>I got about 5 chapters into angels and demons (read on and you may understand why,
+            also they were super short chapters) and holy shit can this guy not write </span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image12.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Went to the maze that is macquarie shopping center and the ice skating sign being
+            like this is ever such a vibe</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image6.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><p>Cleaned out a bunch of old shit from my old room and found this card from when i was
+            forced to do sailing on the weekend and had possibly the worst time of my life at it. </span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image8.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><span>Also found this kite handle which was made in year 7 and i just think its neat. </span></p>
+    <h1 class="c6" id="h.fx24kjw9pyu6"><span>Media</span></h1>
+    <ul class="c8 lst-kix_le376ks6n71v-0 start">
+        <li ><p><b>Severance - </b>look its still good, theres a
+                part where someone gets a list of grievances printed in an properly bound book and the graphic design on
+                it is nuts and now the cinematographer is directing and they are ever so talanted</p></li>
+        <li ><p><b>Paradise - </b>I started watching this
+                because i thought it would be a fun murder mystery but its far more of a political thriller, its wierdly
+                wierd? No i don&#39;t know what that means - its fine. Its pretty good but there are some bits that are
+                very signposted and other bits that i felt came outta nowhere and theyve got a 2nd season confirmed and
+                i have so many thoughts about where the fuck its going to go next</p></li>
+        <li ><p><b>Happy Endings - </b>This is a strange show,
+                its the reason that coach isnt in the first season of new girl, its a sitcom about 6 friends and the
+                pilot is literally two of them getting married and she runs out on him. He then gets depressed and
+                immediately i was like. Yes. whenever this man succeeds i am upset but whenever something bad happens to
+                him i am sat up straight. No expression on my face as i whisper to myself &ldquo;good&rdquo;. He at one
+                point finds out his 1/16th native american and goes super fucking hard into it and its just real white
+                boy hour. The best part is the guy from new girl and the gay guy but also its aged sorta poorly which is
+                wild as i was about to be like &ldquo;oh its in that era before shows were like willing to not punch
+                down as much like community&rdquo; but community started in 2009 and this started in 2011. A few weeks
+                after this started a fistfull of paintballs aired hot dog. </p></li>
+        <li ><b>From</b>- This shit feels like a
+                mystery pass the parcle where every time a layer is removed you just realise theres more of an mystery
+                under the layer you removed but also it has the guy who voiced owen in total drama island in it and
+                thats cool. Ive just finished the 3rd season and it feels like its actually unravelled one of the layers
+                in a meaningful way but now i have to wait till probs nextyear for more so oh well. Dunno why im on such
+                a mystery box hit this month</p></li>
+        <li ><p><b>The Davinci Code </b><p>- i saw that dan brown
+                had a new book in this series coming out so i thought &ldquo;yeah fuck it, ill watch the movie&rdquo;
+                and holy shit was it bad. First off i accidenly sourced the directors cut so it was almost 3 hours long,
+                but also it didnt come with subtitles so the first 50 mins any time leon the professional was talking in
+                french i was just nodding along occasionally picking up on words but mostly going &ldquo;i wonder if
+                this is better with subtitles&rdquo;. By the time the guy from angie tribeca showed up and had a full
+                scene not in english i snappes and found my own subtitles (the ones plex provided were either 5 seconds
+                fast or 5 seconds slow). The strange thing about the entire movie is that ron howard is sorta cooking?
+                Like the script is nonsense and tom hanks is giving the worst performance ive ever seen from him but
+                there are some cool visuals in the movie! It just doesnt help that i guessed the whole &ldquo;direct
+                blood decendant of jesus christ&rdquo; thing about halfway through so when it fucking dragged out the
+                reveal over 10 mins i was in agony. Will i watch the rest of them? I dunno. Its currenlty 10pm on
+                saturday the 15th and oh no im gonna do it now aren&#39;t i</p></li>
+        <li ><p><b>Angles and Demons</b>&nbsp;- this opens with some truly
+                beautiful shots of the big science thing in CERN and i really think that ron howard (massive nerd) got
+                the permission to film in there and went fuckin hog wild - like you can skip through them talking no in
+                english and also the fact that a priest is in the hadron collider but the opening shots are shot by a
+                guy who was just facinated by what it was </span><span class="c4"><a class="c7"
+                    href="https://www.google.com/url?q=https://youtu.be/RVTCs8ZNOOc&amp;sa=D&amp;source=editors&amp;ust=1740722389991673&amp;usg=AOvVaw2xyNtkAobqbC1z5WIxaBj7">https://youtu.be/RVTCs8ZNOOc</a>&nbsp;- ok its now midnight and its done, holy shit that movie was watchable?? It had a
+                fuckin ticking timb bomb that made sense, the threat was real the twist was obvious and ewen mcgregor
+                was supposed to be from ireland but sounded 100% just himself but it was fine. Also it was about a
+                conclave and every time they would do something conclave related id do the leo meme excited that i know
+                about that because i saw conclave. Also the entire movie is them racing to stop this bomb from going
+                off, but in the end it goes off and it fucking does damage. There are several shots of crowds being
+                blown back, buildings being destroyed and i just kept laughing to myself about how ridiculous it was.
+            </p></li>
+    </ul>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image2.jpg"
+                
+                title=""></span></p>
+    <p class="c0"><i>When this happened i was hooting and howling waiting for ralph phones to show
+            up</i></p>
+    <ul >
+        <li ><p><b>Inferno</b>- God this was dull and
+                boring. It started out interesting! Tom hanks had amnesia and wakes up in a hospital with visions! But
+                then damn it goes boring. It just keeps going and eventually it shows its hands and brings in some
+                twists and i was like &ldquo;oh thats it?&rdquo;. Also the mcguffin in this is an virus thats going to
+                wipe out half the population and that might just sting. Idk why but i just really couldnt focus on it.
+                Was boring. Played balatro. </p></li>
+        <li ><p><b>Captain america brave new world order or whatever its called -
+        </b>I really think im over marvel. I know this is a hot take to say now (i will
+                absolutely be watching daredevil now fisk is the mayor or whatever its called) but this one was like .
+                just eh to me? I remember the falcon and winter soldier show feeling like a movie that was chopped to
+                bits to remove the pandemic storyline and now this feels like a movie thats been reshot to death to
+                introduce new plot lines that sorta go nowhere and also cut around the fact one of the lead characters
+                is marvel comics big &ldquo;isreal #1&rdquo; super hero (rumours say they cast her right before the
+                genoside started and have been just slowly cutting out her scenes as they got closer to release) anyway
+                like 3/10 - was eh. It also felt rushed. And yes. That might be because i watched it at 1.5x because it
+                seemed boring but theres no fucking scenes! Everything was just exposition and then moving on. Wait no
+                there was one bit at the start but it was with the new falcon guy and he is too quipy i cannot stand him
+                anyway its hilarious taht they peaked with the winter soldier and ahve been chasing that high ever since
+                (if the movie just slowed down and let scenes play out it would be better) </p></li>
+        <li ><p><b>Hadestown -</b>see below, i loved it. </span>
+        </li>
+        <li ><p><b>Candide </b>- this was an opera. Now
+                you might be going &ldquo;jack i thought you hated the idea of an opera&rdquo; and oh boy i was right,
+                the best part was eddie perfect playing the narrator but basically as aussie beetlejuice. I do think the
+                plot of the show was a lot of fun and finding out it was made through spite? Oh it made me adore it even
+                more. Every song made me want to get up and leave tho that was a lot - oh i just remember i mainly went
+                to it as i saw steven sondehim did some of the lyrics but i really think i saw a version of the show
+                that he didnt because theres multiple long blog posts about his contribution to the show and it seems
+                like most of it is not a lot. </p></li>
+        <li ><p><b>From the Apple Tree </b>- This was an
+                small production of three small musicals, all with common themes. It was a lot of fun but really none of
+                the songs stood out (its from the 60s when the best thing was the original west side story ew) but the
+                stories were pretty fun. Also it tought me that adam and eve were the parents to the kid who beans his
+                brother on the head. </p></li>
+        <li ><p><b>Wuthering heights - </b>I had no idea what
+                this book was but this musical? Stage play? Operatic version of the story was nuts, or maybe the story
+                itself was nuts but it was so electric and wonderful and fucking bananas? And also having a POC playing
+                heathclif makes so much sense why do they keep casting white men ughk, also turns out this was straight
+                off the west end cast so there is a proshoot of this exact show which is great because act 2 has a
+                character as a ghost just lurking around the stage. Also the moore is the ensemble and its such a cool
+                idea</p></li>
+        <li ><p><b>Presence</b>- this just feels like
+                soderbergh showing off, its shot at 14mm and so its super fucking wide angle, honestly it is so good i
+                don&#39;t wanna spoil it. The movies under 90 mins (if it was any longer it probs wouldve gotten old) i
+                don&#39;t think its showing in many theatres but you can always sail the seas its so good. Actually fuck
+                it this isnt a spoiler its in the trailer - Every time someone just clocks the camera my body fully
+                shivered it was so spooky, also its a ghost story where its not jumpscare central! </p></li>
+    </ul>
+    <h1 class="c6" id="h.bo86svi6qg7j"><span class="c2">Hadestown</span></h1>
+    <p class="c0"><p>Ive seen it twice. Both times the gasps from the audience when he fails the challenge
+            got me (i was already very crying at that point, hearing sniffles from the crowd during the final reprise
+            rules). The first time was opening night and the second was the premier. Seeing it in a crowd full of people
+            who are fucking here for it was incredible. The cheers after each song was so good and getting to feel the
+            trumpet going in my bones at the start was iconic. </span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><p>Also they gave us flowers on opening night but they were real and mine has finally
+            withered which feels like a beautiful metaphor for what the show was</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+            ><img
+                alt="" src="images/image13.jpg"
+                
+                title=""></span></p>
+    <h1 class="c6" id="h.bkgrf75f69wo"><span class="c2">Tech in movies</span></h1>
+    <p class="c0"><p>So im a ners i know that but one thing i like when watching movies is seeing an phone
+            or laptop that is an dead flop. Like in several movies they use the surface duo, the microsoft phone that
+            has 2 screens (it was in captain america) and also in paradise they i think are using the essentials phone
+            (aka the phone created by the founder of android who was ford out of google because he was a sex pest and
+            went bust after a year). The two davinci code movies are fascinating because both are sony movies so
+            everything is sony branded. Sony handy cam. Sony vaio laptop with media playback buttons with a lock (turns
+            out this was so they could secretly record the pope) and also the sony logo right in shot. The funny thing
+            is this is the era when having a sony laptop wasnt such an laughing matter. </span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span
+           ><img
+                alt="" src="images/image7.jpg"
+                
+                title=""></span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><p>Also this is a pic from the latest ep of PAradise, ive blurred whats on the tv for
+            spoilers sake but look at how theyve put the tv legs on backwards to fit it onto this trolley, this tv is on
+            screen for like 10 seconds and some poor prop person had to do this to make it work. </span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.adatmhgv36ed"><span class="c2">The Rest is Entertainment</span></h1>
+    <p class="c0"><p>Ok so this is a podcast that makes me more mad then hell but for some reason i still
+            occasionally listen and fuckin oath. Its hosted by richard osman (the tall man from s2 of taskmaster and the
+            host of richard somans house of games and a producer on the original uk run of whose line and also an author
+            my mum loves) and mariana hide (i think she writes for the guardian uk?) and its fascinating because they
+            have such a wealth and depth of knowledge about british tv shows when richard can just call up his producer
+            friend and find out about how they make a show and what now.</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span>But then whenever they talk about movies they are so unbelievably out of their depth and they
+            disudiscussed mr beast and youtube they sound 100 years old. The reason i bring them up now is that the
+            reason iw atched the dan brown movies (at time of writing ive only seen 2 of them but i can feel inferno
+            itching away at the back of my head and oh no theres a prequel tv show i shant be doing that) and they kept
+            saying &ldquo;oh well dan sells a lot of copies of his book. You can say its trash but he sells&rdquo; and i
+            was like &ldquo;ok what about the movie&rdquo; and fucking hell its trash. Like not just trash but bin juice
+            thats been left in the sun on accident as you went away for a month and left a bin bag on your balcony - ive
+            just put on the trailer for inferno and fuckin oath its about dantes inferno this is gonna be insufferable.
+        </span><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/RH2BD49sEZI&amp;sa=D&amp;source=editors&amp;ust=1740722389996206&amp;usg=AOvVaw1w2SLqBH-1Qi8KKU_nbza0">https://youtu.be/RH2BD49sEZI</a></span><span>&nbsp;fuck
+            its such a bad trailer every time hanks speaks it looks like his holding down a burp. Anyway this podcast
+            stinks, i keep watching it for some reason and also when the gregg wallace sunday article came out (
+        </span><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://x.com/edcumming/status/1754508139003580918?lang%3Den&amp;sa=D&amp;source=editors&amp;ust=1740722389996740&amp;usg=AOvVaw00HOPS0tqGDwP7eTcIFLnA">https://x.com/edcumming/status/1754508139003580918?lang=en</a></span><span>&nbsp;or
+        </span><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://archive.is/oCaYc&amp;sa=D&amp;source=editors&amp;ust=1740722389997093&amp;usg=AOvVaw3wqsetQ5Bpqk8_iE9D5ALZ">https://archive.is/oCaYc</a></span><span
+            class="c1">&nbsp;the man is alan partridge )richard defended him and its ohf</span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.euf36553o8o3"><span class="c2">This will fix me </span></h1>
+    <p class="c0"><p>Having my brainoct in on some fuckin piece of tech thinking &ldquo;well if I had that
+            then it would fof me and my life would be so much better&rdquo; keeps happening. I just wanna outline some
+            of them.</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><p>The first was the beepy, basically a blackberry that has a raspberry pi zero in it
+            and runs full linum it&#39;s made by the guy who made the pebbelnwatch and also created an app that lets you
+            have all of your chat apps in one. The main idea behind this device is you could do all of your chats from
+            there (or at least that&#39;s what I think, very few of these were made and there&#39;s little information
+            about it beyond a discord of 12 people who are constantly dealing with people who join asking if more will
+            be made or when they&#39;re going on sale again and tell them it&#39;s absondonwear basically or you buy a
+            colour one for 400 AUD. Note I&#39;m not doing that I don&#39;t need one that bad) anyway. </span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><p>I&#39;ve started wearing watched (the cool old Casio digitals as they&#39;re tiny)
+            and I get the idea of a smart watch now but the size of the pixel watch (and also that fuckin nothing one I
+            bought) really turn me away from it. But ages ago I remembered that I got two seperate pebbles for Christmas
+            (one bulky launch one and the other the slimmer and colour screened pebble time) and went &ldquo;I should
+            try using them again&rdquo; one ritalin later and I had ripped apart my draws (where I thought they were)
+            with an unsuccessful search and I&#39;m honestly gonna go look again becuase they&#39;re in my old room
+            somewhere ive just gotta get high af and search properly becuase they are expensive on eBay and also ew
+            it&#39;s a used watch. But fuck the time round is so sexy and thin ughkt</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><p>Anyway basically this one nerd made two cool devices and his making a new one so
+            anyway I dunno what this is about I&#39;m on the train to circular quey to see an operah now and I don&#39;t
+            know why I&#39;m doing this, I only really got it becuase it has Eddie perfect in it and it&#39;s the
+            version that has some Sondheim lyrics? But honestly Sondheim is such a goated composer becuase he does both
+            anyway belles hot chicken why is this down here jack close google docs</span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.f9tjp0pq9l3n"><span class="c2">The spanish man runnin in the sand</span></h1>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://x.com/popculture2000s/status/1886875821253476689&amp;sa=D&amp;source=editors&amp;ust=1740722389998729&amp;usg=AOvVaw0tvrqWIPZpGvm7qxQ5e9m_">https://x.com/popculture2000s/status/1886875821253476689</a></span><span
+            class="c1">&nbsp;</span></p>
+    <p class="c0"><p>Im just linking this because its hilarious. The hard cut between the guy fuckin
+            sprinting to just two bits of ham going for it gets me every time. Also i found out the concert of the show
+            is this guy and his gf are on the show to see if she can not give in to temptation and i feel so bad for
+            this guy because he has to watch while she gets down. The host just having to sit there and watch with him
+            feels brutal, theres several other clips of this but love a good emotional spanyard </span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.x3wub4pfg9hz"><span class="c2">Im not gonna be annoying and only talk about smosh here</span>
+    </h1>
+    <p class="c0"><p>So smosh was something i watched in high school? And now its like. Good? Not that it
+            wasnt good in the middle no actually during defy i think they were getting fucked but it seems during their
+            mythical era they got good and ive been watching so many of their vids and i just wanna link a few because
+            there are some great comedy vids </span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/zlHPh7q1zf8&amp;sa=D&amp;source=editors&amp;ust=1740722389999706&amp;usg=AOvVaw0BYxhv1Zh9-hFfCFxC0Bhx">https://youtu.be/zlHPh7q1zf8</a></span>
+    </p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/za3hPXB1VQM&amp;sa=D&amp;source=editors&amp;ust=1740722390000225&amp;usg=AOvVaw20_4115Qwkh6pLVd_xWJQ_">https://youtu.be/za3hPXB1VQM</a></span><span
+            class="c1">&nbsp;(this is an ep of bit city which is their sketch long form improv show and the woke mob in
+            this is great)</span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/-w33inkzCKU&amp;sa=D&amp;source=editors&amp;ust=1740722390000629&amp;usg=AOvVaw16GvrcEHyzLmy6LYSbDCDO">https://youtu.be/-w33inkzCKU</a></span><span
+            class="c1">&nbsp;this has so many great moments but &ldquo;somehow ive made myself drunk&rdquo; is an
+            absolute highlight. And also &ldquo;Come on back to mama&rdquo;</span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/8pulEaPiz6E&amp;sa=D&amp;source=editors&amp;ust=1740722390001061&amp;usg=AOvVaw2t3__aB7dLxeL__807DyuN">https://youtu.be/8pulEaPiz6E</a></span><span
+            class="c1">&nbsp;im only gonna link a clip to this but chance&rsquo;s spud hut bit is fuckin incredible
+            &ldquo;why are you so hot&rdquo; &ldquo;because of the spuds&rdquo;</span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/Znydk5M3GuM&amp;sa=D&amp;source=editors&amp;ust=1740722390001494&amp;usg=AOvVaw2mZqnXvrNXPMAtT6PLVTuD">https://youtu.be/Znydk5M3GuM</a></span><span
+            class="c1">&nbsp;this gentlemen don&#39;t win is great, they play these horrific british gentleman
+            characters and spencer just says the most horrific shit but its great</span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/SzpFdrLU3HU&amp;sa=D&amp;source=editors&amp;ust=1740722390002019&amp;usg=AOvVaw1lPt2yjf3-Ix_-JAu9MHbS">https://youtu.be/SzpFdrLU3HU</a></span><span
+            class="c1">&nbsp;i think this is their best try not to laugh </span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/k8Y1fQuuASg?t%3D956&amp;sa=D&amp;source=editors&amp;ust=1740722390002419&amp;usg=AOvVaw0BARt9DAGOvFvgm5zCNgNo">https://youtu.be/k8Y1fQuuASg?t=956</a></span><span
+            class="c1">&nbsp;the segment of this video where angela goes through all the dogs she fostered during the
+            pandemic </span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.osbsybhqacts"><span class="c2">Idk some other shit</span></h1>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/jW8ArzcpcQ8?t%3D544&amp;sa=D&amp;source=editors&amp;ust=1740722390003131&amp;usg=AOvVaw23Ar0FtPo8hnpBMTKqYVTF">https://youtu.be/jW8ArzcpcQ8?t=544</a></span><span
+            class="c1">&nbsp;this is a song from a show called bright star, which has songs written by steve martin and
+            it came up on my ipods shuffle and its just an entire song about death and sure maybe i havent fully
+            processed the recent death things and thats why it gets to me so much but its good</span></p>
+    <p class="c0 c5"><p></span></p>
+    <p class="c0"><span class="c4"><a class="c7"
+                href="https://www.google.com/url?q=https://youtu.be/SJClY2gHItE&amp;sa=D&amp;source=editors&amp;ust=1740722390003649&amp;usg=AOvVaw3OBsfrB3RI_HH5YIOQHJ5F">https://youtu.be/SJClY2gHItE</a></span><span
+            class="c1">&nbsp;i edited this video almost 4 years ago (aaaaah) and i just wanna link to it as i randomly
+            got recommended it and i think its a good edit and its dumb and good anyway i don&#39;t know how to
+            compliment myself</span></p>
+    <p class="c0 c5"><p></span></p>
+    <h1 class="c6" id="h.6pd1yh2x9xxt"><span class="c2">Outro</span></h1>
+    <p class="c0"><p>Well thats all folks. im february is a wash. Also im ready to get a new laptop as my
+            dell xps 15 &nbsp;had windows explorer crash twice while i was making this, sure it might only have 20gb of
+            space left on the ssd but thats plenty of space! Also id love to have one of those new fancy laptops that
+            doesnt just raidnet heat constantly, id love to be able to use a laptop in the summer without sweating and a
+            battery that lasts more than 2 hours. &nbsp;so anyway those are goals hope you are all well</span></p>
+</body>
+
+</html>
