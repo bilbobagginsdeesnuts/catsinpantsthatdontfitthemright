@@ -1,0 +1,396 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c9 doc-content">
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span>Guten hargen my friends (i learnt german for a term of year 7, the teache was supposed to teach
+            us italian wait have i already started with this story oh well) - as i write this it is 10:20pm on the 31st
+            of march? I have just got home from Bloom a musical about an aged care facility written by the host of have
+            you been paying attention and realised that today is the end of the month and i have written one paragraph
+            so im sat now with a tea with the chicago original broadway soundtrack on my ipod as i blast this out. As it
+            is my solem promise that you will get this email before midnight sydney time (or maybe adelaide depending on
+            how bad i go at converting this to html) anywho</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <h1 class="c6" id="h.k7otgex3d82y"><span class="c4">Photos</span></h1>
+    <p class="c5"><span><img alt="" src="images/image5.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Started the month off watching mardi-grass and learning that LG tv&rsquo;s let you
+            zoom in and having a blast with that</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image7.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">I bought a knife block thing that i wanted to put into my draw but it was too long so
+            i got to be manly and spend literally 20 mins sawing off like 2cm</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image4.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">I got a new desk mat! And celebrated by playing uno by myself while being bored in a
+            meeting, i believe the green 8 ended up winning</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image3.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Had to remove all my fly screens because the building were cleaning the windows -
+            this was an all timer effort that was so hard until i realised wd40 is like a miracle thing that just makes
+            things move but also they were filthy and did cause me to have spiders in my shower for a week while i
+            slowly killed them all</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image2.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Played uno yet again... look im not saying i need hobbies but the all friday meetings
+            at my work are really boring </span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image9.jpg" title=""></span><span><img alt="" src="images/image1.jpg"
+                title=""></span></p>
+    <p class="c5"><span class="c2">Went to the Chinese restaurant at the bob hawke beer and leisure centre as a surprise
+            for my mum and she loved it, we also had hong kong toast which was a delight</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image16.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Saw Taskmaster aus s5 get film that was fun</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image8.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Then saw it again, this time the finale (seeing rove live was a very strange
+            experience)</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image14.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">When i got on the train these guys were eating this pizza, when i got off it was like
+            this and they were not talking to eachother</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image6.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Saw this horrific display for a minecraft movie and i gotta watch the worst cam rip
+            of this full of gambling ads asap</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image15.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Saw hadestown again and cried at 3 new spots this time, also the understudy for
+            hermes brought a whole new energy to it which was dope</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image10.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Im calling out Sabrina Rachel Ekstein for putting this much vegimite on toast, and
+            then making a sandwich of two slices of toast - one with vegimite and one with raspberry jam and saying of
+            it &ldquo;its pretty good&rdquo; this is a food crime and i have a mind to bar her from my kitchen </span>
+    </p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image12.jpg" title=""></span></p>
+    <p class="c5"><span class="c2">Saw a creeper again but this time up close and the toe nails are upsetting</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span><img alt="" src="images/image11.jpg" title=""></span></p>
+    <p class="c5"><span>Anyone want a spongebob gaming locker, Tk Max Chatswood westfield </span></p>
+    <h1 class="c6" id="h.fx24kjw9pyu6"><span class="c4">Media</span></h1>
+    <ul class="c7 lst-kix_le376ks6n71v-0 start">
+        <li class="c1 li-bullet-0"><span class="c3">No Love Songs</span><span class="c2">&nbsp;- This was a non musical
+                show that i saw on a lim, it was fun tho! Part of the plot was &ldquo;geeze this guy cannot deal with
+                his partner being depressed&rsquo; which was a lot but it was fun. Also it started the son from rake
+                which when i watched rake back when i was a teen he was one of the first tv people to make me be like
+                &ldquo;Why am i feeling like this about a guy wtf&rdquo; and then didnt act on it for a decadeish anyway
+                it was weird seeing him live as i was sitting at the end of this weird overhang alone but it was
+                fun</span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Finishing like a dragon infinite wealth - </span><span class="c2">i
+                have put off ending this game for well over a year, i spent so long grinding and getting all the
+                achievements for everything else (annoyingly there are some dlc achievements in there which i will come
+                back to and some for finishing the game again on hard and fuck that) but it was a dlieght, sure did i
+                forget who everyone was and what the big emotional climaxes were? Yes. but was it fun? Yes! Pirate
+                yakuza might be next but we will see</span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Days gone </span><span class="c2">- After finishing like a dragon
+                infinite wealth i was looking for my next game and went &ldquo;fuck it, lets do some trash&rdquo; and i
+                don&#39;t think i finished the tutorial. It was like &ldquo;oh you go in there stealthily&rdquo; and i
+                just noped out, i truly didnt want to interact with whatever dogshit stealth system this game has to
+                offer</span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Pshyconauts 2 </span><span class="c2">- damn its fun to play a 3d
+                platformer, also i started watching the doco making this forgetting that there is a good chunk of the
+                series that involves everyone sorta hating their boss? And it coming to an ugly head its so canded and i
+                cannot believe they released it tbh especially because half the game they spent 3 years working on is
+                not in the game im playing. </span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Invincible - </span><span class="c2">I started s3? Idk what it is,
+                thinking &ldquo;oh i hate this?&rdquo; but i realised its just the teenage melodrama that i absolutely
+                cannot stand, the rest of it was a bit of fun. Now do i think the pacing is crazy and it also keeps
+                calling back to things that i have long forgotten? Yep. have i watched multiple vidoes about the story
+                of the comics? Yes.</span></li>
+        <li class="c1 li-bullet-0"><span class="c3">The Residence - </span><span class="c2">This was very fun, it was
+                based on a book about the staff at the whitehouse which is sorta strage as its a murder mystery but then
+                it does make sense based on what they do, and also the fact that they sometimes just say facts to the
+                camera. Highlights are the australians (theyre all good), getting jumscared by al franken (i have been
+                on a kick of watching this youtube channel recap every season of SNL and he plays such a role in the
+                early seasons so it was just a shock to see him still doing his same schtick again), Giancarlo Esposito
+                getting to play not gus frink from breaking bad was also a delight. </span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Severance - </span><span class="c2">no spoilers for s2 but i will
+                say the finale had multiple points where i full on lmao&rsquo;d and god i hope they announce s3 will be
+                the end i don&#39;t know if this show can go for 12 seasons</span></li>
+        <li class="c1 li-bullet-0"><span>Nirvana the band the show - I;m back on s2 because the movie was showed at sxsw
+                and the creators were like &ldquo;you may be the only people who get to see this&rdquo; which annoyed me
+                but new neon have picked it up and thats exciting! Its not a show for everyone but its fun, but i will
+                say the wii shopping video is a delight </span><span class="c10"><a class="c8"
+                    href="https://www.google.com/url?q=https://youtu.be/B_qnI1WrlnU&amp;sa=D&amp;source=editors&amp;ust=1743425913073734&amp;usg=AOvVaw2MrwjfnmqfgQoAA7zuABtl">https://youtu.be/B_qnI1WrlnU</a></span><span
+                class="c2">&nbsp;</span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Anora - </span><span class="c2">i watched this a few days before the
+                oscars and it was a blast, the whole middle bit is so crazy but i really enjoyed it and am glad to say
+                that &ldquo;oh yeah i saw that movie&rdquo; to the oscars winners (i wouldve been ok if conclave won but
+                of the two oscars movies ive seen they were both delightful) </span></li>
+        <li class="c1 li-bullet-0"><span class="c3">The untold story of tabitha booth </span><span>- This is just so
+                good, its a 60 minute mocumentery from a comedian about a character they created called Tabitha Booth,
+                an famous person from the 60s, who is trying to have a comeback. The doco is about them putting on a
+                show which was actually their MICF show last year which was the first show i saw and it fully broke me
+                as theres a part where tabitha booth is climbing through the audience and for a moment i was fully
+                worried that i was going to die because it was so funny anyway thats a lot of hype this is very fun
+            </span><span class="c10"><a class="c8"
+                    href="https://www.google.com/url?q=https://youtu.be/bNAJZ2RcQ2g&amp;sa=D&amp;source=editors&amp;ust=1743425913074065&amp;usg=AOvVaw26b-rJ7-PxYYq6JLZ4fRic">https://youtu.be/bNAJZ2RcQ2g</a></span><span
+                class="c2">&nbsp;</span></li>
+        <li class="c1 li-bullet-0"><span class="c3">Why Am I So Single Album </span><span class="c2">- the full album of
+                this west end show i saw has been released and its a treat. Its by the duo who wrote six and is about
+                both of their dating lives. Highlights include 8 dates (a telling of the gay ones experience with dates
+                cancelling on them) C U Never (a song that has their bi friend telling them to stop texting the boys who
+                are trash and the typing sounds are all tap dancing) Meet Market (them going through their apps and
+                london men sound like trash) and finally discoball (a song about the gay one being like &ldquo;people
+                like me as a disco ball not for who i am&rdquo;) anyway idk i like it and have been listening to it a
+                lot so take from that what you will</span></li>
+    </ul>
+    <h1 class="c6" id="h.bo86svi6qg7j"><span class="c4">Starting the west wing again</span></h1>
+    <p class="c5"><span class="c2">The other night i, as you might say, hit rock bottom and started the west wing again.
+            Now by started i mean i put on episode two (i cannot stand the speech at the end of the first episode)
+            thinking &ldquo;oh this will be me, wallowing in the mud as i watch this bullshit&rdquo; but to my surprise
+            i remembered how much pain was to come and havent watched any more! Progress!!</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span class="c2">Anyway i don&#39;t have much else to talk about, im heading down to melbourne for the
+            comedy festival on thursday and my suitcase is half packed tomorrow and ive put in for 10 hours of leave to
+            fly when i was on 1 hour so fun so next month is gonna be 10 days of me loosing my mind watching 3-4 comedy
+            shows every night. &nbsp;Also im done writing at 10:58, so half an hour thats not bad. Now to export this to
+            html and convert it to my styling and then upload it to github pages and then copy that to gmail and send it
+            (yes this process could be smoother but. Idk i am a gluten for punishment i guess - ok nope ive done it now at 11:04 i think last month i made the css on this file adapted to whatever nonsense google does)</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span class="c2">Anyway hooroo</span></p>
+    <p class="c0"><span class="c2"></span></p>
+    <p class="c5"><span class="c2">Collect my pages</span></p>
+    <p class="c5"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 186.59px; height: 405.05px;"><img
+                alt="" src="images/image13.png"
+                style="width: 186.59px; height: 405.05px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+</body>
+
+</html>
