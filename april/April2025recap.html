@@ -1,0 +1,591 @@
+<html>
+
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .c5{
+            font-weight:bold;
+        }
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c7 doc-content">
+    <p class="c2"><span class="c0">Hark! </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Its April. I have lost my tiny little mind by going to melbourne twice as right now i
+            am listening to the lord of the rings musical soundtrack (so fucking bad) while putting the finishing
+            touches on my series of games for election day, hey thats coming up! And i cbf to early vote so i guess im
+            gonna go find a polling place and then go for brunch at the squadron but THATS FOR MAY FORBIDDEN KNOWLEDGE
+            NOW IS TO LOOK BACK ON APRIL</span></p>
+    <h1 class="c4" id="h.k7otgex3d82y"><span class="c1">Photos</span></h1>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image10.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">The enmore country club has sadly shutdown, sure its cocktails were mid and the AC
+            was only in the main room which was always busy as sin but it was close to where i lived and thats a shame.
+        </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image4.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">I had to sit in on a work webinar and the fucking ghal of teams to suggest my
+            linkedin im furious. Also god the email that my boss picked for us to use on teams is fucking embarrasing,
+            love to tell clients &ldquo;oh yeah its .onmicrosoft.com&rdquo; as if im a fucking corporate stooge of
+            redmington gah i hate microsoft</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image31.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Did i 3d print the speaker from severance as a distraction from packing for
+            melbourne? Why of course i did</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image28.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Saw the TinCan bros show which was wild because thats 3 starkid performers? Live?
+            Infront of me? Wild. </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image34.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">The show also let you do in app purchases and this mother fucker spent real money on
+            fake chuds to vote, which honestly was a funny bit. </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image32.jpg"
+                
+                title=""></span><span
+            ><img
+                alt="" src="april/images/image14.jpg"
+               
+                title=""></span></p>
+    <p class="c2"><span class="c0">Flew down to melbourne, and got some free food because i paid for baggage. THE LUXURY
+            OF JETSTAR!!!!</span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image25.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Then for most of the month this is where i was staying - i will note this is when i
+            arrived, it was a lot more disheveled as time went on</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image22.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Also the mugs they had stunk so i went to David Jones to buy these lecruiste ones on
+            sale and they are so good</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image13.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Then while waiting for some food i saw Kieran Clarke in Melbournes CBD on i think
+            russel street? For those who don&#39;t know who this man is, this is my friend declands older brother. Who
+            now seemingly lives in melbourne? I didnt say hi to him as i was too in shock seeing someone that i knew
+            from highschool (oh god that also reminds me that im like 70% sure i sat next to someone during greg larsons
+            show that i went to school with but i couldnt be a creep and just openly stare at the person next to me, i
+            was in home room with him but it will be impossible to figure out his name so alas) </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image2.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Saw a late night show where comedians had to do ted talks against slides theyve never
+            seen before and this one just tickled me</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image8.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Finally as outlined below barely made it to bag drop to fly back to sydney</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image33.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">And then play dnd a few hours later</span></p>
+    <p class="c2"><span><img alt="" src="april/images/image35.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Had the dominos donut and boy howd eating this whole thing in one go after eating
+            half a pizza made me feel like crap</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image11.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">A random client on a work meeting had the minecraft background and the giant frog
+            rules but also the scale makes no sense! Microsft do better</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image3.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Saw this car while driving and the plate is remarkable</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image9.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Found out that bilbos fathers name in lotr is BUNGO???? Psycho shit, i thought this
+            wouldve been a random name from the letters but this is in the fucking apendencies </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image26.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Saw an easter bunny at ikea</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+            ><img
+                alt="" src="april/images/image27.jpg"
+                title=""></span><span
+           ><img
+                alt="" src="april/images/image30.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Was the coolest guy on the plane playing games on my miyoo mini plus (this was on
+            easter saturday and it was so quiet at the airport but melbourne ho again)</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image23.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Had a royal stacks for the first time in ages and honestly, pretty good! </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image6.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Went for a cocktail at this bar with the most black and gold ass iga sign</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image5.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Flew back to sydney on easter monday reminded of the jesus 3 day thing or something
+            idk it wasnt until a few years ago that i realised he actually came back and easter wasnt when he
+            died</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image20.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Found my old calculator for blue prince! This was a thing i found on the floor of i
+            want to say my year 12 english classrooms floor, and it was there for weeks before declan and i just took
+            it. The best part is that you type in a number and hit TAX+ and it just changes the number! What does it do
+            to the number you ask? No clue! Its different every single time! </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image1.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Saw the producers live! Loved it. Also saw it with davis who&rsquo;d never seen it
+            before so him getting to hear the name of the play they find was priceless</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image18.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Went to ikea again (im not obsessed stfu, ill probs be going tomorrow as they have a
+            new chair i want) with darling friend Mae who also stayed with me</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image16.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">This was at reverse garbage and hoesntly im kicking myself for not buying this
+            hideous mousemat but also god am i glad i didnt buy that trash</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image17.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Spent Anzac day morning wandering the beach</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image7.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">And the night watching the most upsetting guessing game go fucking nuts</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image19.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Also we went to a book themed cocktail bar and i was so happy to have picked the
+            drink in the menu that i thought would be served in the cool way and i was so right (the pina colada is
+            inside a flask inside the book)</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image15.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">Saw this in Sydneys CBD and nothing has ever made me more certain that sydneys
+            culture is irreplaceable, no other city would simply have a tooheys bar</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="april/images/image12.jpg"
+                
+                title=""></span></p>
+    <p class="c2"><span class="c0">Oh yeah also got this from reverse garbage for blue prince, it doesnt print perfectly
+            but its fun now to be a little tax man looking at the receipt like &ldquo;yes 10+3 does equal
+            13&rdquo;</span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image21.jpg"
+                title=""></span></p>
+    <p class="c2"><span>Went for dinner last night with my mum and brother at the Marickville Bowlo Club because my mum
+            has been obsessed with the idea since we drove past it when i moved in. and boy howdy was that place stuck
+            in the 70s. Food was fine but god it had weird vibes</span></p>
+    <h1 class="c4" id="h.fx24kjw9pyu6"><span class="c1">Media</span></h1>
+    <ul class="c9 lst-kix_le376ks6n71v-0 start">
+        <li class="c2 c6 li-bullet-0"><span class="c5">The Last of US </span><span class="c0">&nbsp;- havent played the
+                games, so where the story goes i have no idea! I managed to go a few years before having the thing
+                spoilt but i have 0 idea what happens next. Also i keep going &ldquo;maybe i should play the game and
+                experience its story&rdquo; and then remember that the stealth gameplay of the first one bounced off me
+                so hard. The idea of walking around a room collecting nuts and bolts to make 2 bullets so you have to be
+                slow and methodical in a room is just so unnactraicve to me i would rather email my grandfather to ask
+                for tax help (a thing i have to do because the ato have decided im on PAYG tax and owe them $600 every
+                quarter which is confusing as my work pays my tax anyway i think i really fucked up my filing last
+                year)</span></li>
+        <li class="c2 c6 li-bullet-0"><span class="c5">Blue Prince </span><span class="c0">- This is a puzzle rouge
+                light that i legit feel like im making no advancements at but also i keep pushing and finding little
+                things? Like i can tell theres some big things in motion but i just cant work out how they click
+                together </span></li>
+        <li class="c2 c6 li-bullet-0"><span class="c5">Advanced Wars 2 - </span><span class="c0">im playing this on my
+                little console after i got angry at the first game for being too hard and this one has a much nicer ramp
+                up, its nice sometimes to just make an army of guys and then loose them all because you fucked up</span>
+        </li>
+        <li class="c2 c6 li-bullet-0"><span class="c5">Death becomes us the musical the cast recording </span><span
+                class="c0">- this finally released and its got some real bops in it, i can finally watch the bootleg i
+                found ages ago and enjoy the songs now that i know what they are/</span></li>
+        <li class="c2 c6 li-bullet-0"><span class="c5">The Rehersal </span><span class="c0">- this show is tough for me
+                to watch because its designed to be cringey and it just works so well. The 2nd episode has some real
+                incredible stuff in it (not just the paramount germany stuff but like, theres a shot of him sitting on a
+                stool going &ldquo;i remember i was in the shower when i had this thought&rdquo; and watching his body
+                double shower its incredible stuff but also off the cringe factor)</span></li>
+        <li class="c2 c6 li-bullet-0"><span class="c5">UnReal </span><span class="c0">- i started watching this again
+                and hot damn, every single character is bad and impossible to root for. Its a show about producing a
+                batchelor show basically and the main character is a producer who will manipulate people into doing what
+                she wants but also she gets manipulated and she also has mh problems which stem from an incident at her
+                mothers phsyc office and its just a whole lot of red flags but im still watching it? Also s3 is 2017 and
+                they have a female suitress! And they keep calling her the &ldquo;female elon musk&rdquo; which is
+                hilarious because she does 0 ket on the show. Also its sponsored by microsoft so everyone uses windows
+                phone 10. The iphone x was already out the plastic slabs of garbage are a joke</span></li>
+    </ul>
+    <p class="c2"><span><img alt="" src="april/images/image24.jpg"
+                
+                title=""></span></p>
+    <h1 class="c4" id="h.bo86svi6qg7j"><span class="c1">The Melbourne International Comedy Festival</span></h1>
+    <p class="c2"><span class="c0">I saw so many shows, see below for an collage. I could write up short thoughts for
+            all of them and i might but right now i cbf so if theres one below i guess i got bored at work and wrote it.
+        </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span
+           ><img
+                alt="" src="april/images/image29.jpg"
+                title=""></span></p>
+    <p class="c2"><span class="c0">(i went through an entire page of google results looking for a free photo collage
+            maker but god damn that was annoying)</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <h1 class="c4" id="h.rhldo210f7d1"><span class="c1">That fucking man who is doing source to sea down the river
+            thames on youtube</span></h1>
+    <p class="c2"><span class="c0">He gives off bad vibes, 7 parts in and idk i think he just spends multiple videos
+            walking through the water and its weird? Idk he has bad vibes does anyone else get this or does any one know
+            this might just be me. &nbsp;I think it also might be in one of the early eps he goes &ldquo;yeah im gonna
+            go through this hole&rdquo; and it gave me such anxiety that i decided that i hated him. Also just wading
+            through a river thats like wasit deep in a wet suit just gives me off vibes</span></p>
+    <h1 class="c4" id="h.bkgrf75f69wo"><span class="c1">A few thoughts about staying at a friend&#39;s place</span></h1>
+    <p class="c2"><span class="c0">Four lights in the bathroom??? It&#39;s 1:48 am I don&#39;t wanna start fiddling with
+            those (I brushed my teeth in the dark) also opening the bathroom door to have their car meow at me and then
+            walk in gave me a real scare (only becuase I&#39;m sorta bad with cats? </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Like I&#39;m ok but growing up my grandmother (dead now) had a cat (also dead) that
+            was a fucking cunt. It would lurk in the dark and hiss. </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">I never heard that fucker meow only hiss. Legitimately I would be afraid to go from
+            one part of the house to the other becuase the car was sitting in the cathedral room on a chair and would
+            hiss at me. Once my uncle walked me over becuase my mum was busy and he just hissed back at the cat and I
+            was just so shocked that was something you could do??? Anyway I forgot what I was writing it&#39;s 2am I
+            gotta sleep)</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <h1 class="c4" id="h.xq6yacbcmrh"><span class="c1">Top 10 things</span></h1>
+    <p class="c2"><span class="c0">Ok so last year i saw Gillian Cosgroves show at sydney (it was at the old giant dwarf
+            theatre and i think its now called the grand electric?) and a big part of that show was taht she went on
+            holiday with friends and ended up getting everyones top 10 things and then having that in a book.</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">&nbsp;And i love that idea so much that i finally a year later have got a little book
+            and am going to start getting peoples top 10s. Its not in order but its just 10 things that you would say
+            are your top things. Now thing can mean absolutely anything and also i think i may have done this one some
+            of you in the past but fuck it im gonna start going forwards and write it in my little book anyway be
+            prepaired</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <h1 class="c4" id="h.j31myadal03y"><span class="c1">Flying with ADHD and Anxiety</span></h1>
+    <p class="c2"><span class="c0">My hubris knows no bounds. So i have flown 4 times this month (i know look at me mr
+            big bridges flying to melbourne twice because he wanted to go see an extra show look the show was worth it,
+            easter wasnt going to be much with my fam as my brother was being sent down south to help out his girlfriend
+            not be destroyed by her family and my mum just wanted to watch the pitt so i have no guilt). </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">The first flight was at 11am on a thursday. I stupidly didnt clean my apartment the
+            night before and was terrified they were going to do an inspection while i was gone (which wouldnt&rsquo;ve
+            happened as they need to give me 2 weeks notice and i was gone for 10 days logic really doesnt apply while
+            your stressed) so i left with an eta of arriving at like 10am. Now the fun thing is jetstar close the bag
+            drop 40 mins before your departure. </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">So i was like &ldquo;oh ive got 20 mins thats fine!&rdquo; then i get to the airport
+            and holy shit the line was huge. And also! The fucking baggage conveyerbelts go down! So im stressing. I get
+            to be the fucking 3rd next person and they call my flight, i panic and get out and go into the other line
+            (which is just me jutting infront of some old people who shouldnt;ve been in that fucking line) and then
+            notice i wouldve already gone if i had just waited but i just fucking made it. </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Then flying back i was like &ldquo;oh yeah ill leave with pleanty of time&rdquo; nope
+            the line to get a skybus ticket took 10 mins (i couldve bought on my phone but im an idiot) and then the
+            skybus didnt leave for 15 mins so i arrived 3 mins before the cut off, sprinted in printed the bag tag, and
+            then put my bag on the auto machine (because melbourne has the auto bag drops and there was 0 line) and saw
+            it was at 21.9 kg and my heart sunk. </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Jetstar limits you to 20kg. But i went fuck it &ldquo;ill pay whatever they
+            want&rdquo; and then had to yank my bag off the conveyrbelt because i forgot to put the tag on it. Then off
+            my bag went and they didnt even charge me for it! I think the machine rounded down to 21 kg and then that
+            must be their margin of error so anyway what have i learnt from this? </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Should i arrive early? No! </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Hubris be damned the thrill of walking up to the terminal and having your flight
+            already be boarding is electric. My mum drove me to the airport for the 2nd flight as she was worried about
+            me missing it again and i had to spend an hour sat at the gate just playing advanced wars on my little
+            console while listening to death becomes her on my ipod so what take away do i have from this? </span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">I need to set my clocks to not the right time just to keep me on my toes</span></p>
+    <p class="c2 c3"><span class="c0"></span></p>
+    <h1 class="c4" id="h.fxfgrnvy8tof"><span class="c1">Conclusion</span></h1>
+    <p class="c2"><span>Anyway that was april, i was sick but anyway shout out to my friend who had her baby as well
+            thats crazy i knew her in highschool and now she has a child anyway heres me being me </span><span
+            class="c8"><a class="c10"
+                href="https://www.google.com/url?q=https://www.youtube.com/shorts/EIfkgqcMbxw&amp;sa=D&amp;source=editors&amp;ust=1745979092995498&amp;usg=AOvVaw0r2ifLcA5XNmFKqm7Wfaaq">https://www.youtube.com/shorts/EIfkgqcMbxw</a></span><span
+            class="c0">&nbsp;(i don&#39;t know why my gut reaction was to continue saying bitch but anyway)</span></p>
+</body>
+
+</html>
