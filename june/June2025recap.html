@@ -1,0 +1,506 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .c5{
+            font-weight:bold;
+        }
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c4 doc-content">
+    <p class="c1"><span>Good day, we are halfway through the year. What does this mean? Death comes for us all i guess.
+            Im now finishing this on the 30th and ive just found out they are kicking me out in 90 days to sell the
+            place and im fuming. I hate renting. Anyway now june</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c6" id="h.k7otgex3d82y"><span class="c3">Photos</span></h1>
+    <p class="c1"><span><img
+                alt="" src="images/image12.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Started the month out helping clean my grandparents place while theyre away</span>
+    </p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image2.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Got to the JBHIFI at fuckin 7:15am to get my switch 2 preorder its a beaut</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image9.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Saw Demi Adejuyigbe&rsquo;s show - was good</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image6.jpg"
+                title=""></span><span><img
+                alt="" src="images/image13.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Saw the new wes anderson movie and filled my back pockets with snacks and it was so
+            suspicious to have such a lumpy ass</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image8.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Met a cat while i was walking to get lunch, it approached me and wanted to be pet it
+            was adorable</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image4.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Saw a script reading of a new play from the creator of the theatre show FANGIRLS -
+            was fun! An interesting take on macbeth that is by the books and like most adaptations when you slightly
+            know what the shakespear og plot is you go &ldquo;how the fuck are they going to get there&rdquo; and then
+            they do in interesting ways</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image1.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Went to a pu and saw these beauts, this is gonna be costing them a fortune just to
+            play spots on the tvs for all the blokes</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image5.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Hosted a painting night for davis&rsquo;s birthday, this polaroid was taken on
+            accident cropping out other people but i adore its energy netherhtheless </span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image10.jpg"
+                title=""></span></p>
+    <p class="c1"><span class="c0">Finally went up to the hunter to help my mum and uncle in clearing out the house.
+            Shit sucks.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c6" id="h.fx24kjw9pyu6"><span class="c3">Media</span></h1>
+    <ul class="c8 lst-kix_le376ks6n71v-0 start">
+        <li class="c1 c5 li-bullet-0"><span class="c0">The Greatest Beer run ever - I know the story of this from a
+                podcast i listen to called do go on, they took a few creative liberties but ultimately - pretty good
+                movie! Actually shows that vietnam was not a walk in the park, effron swaggers through it as a doughey
+                eyed idiot with such grace its incredible. Also russell crowe is in it and he looks like his just walked
+                out of his vacation and onto set as a favour for someone.</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">American Made - Tom cruise is such a sack of shit in this it
+                rules, it was a double billing with beer run and its an interesting one because they are both perfect
+                examples of why the cai suck shit. </span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">GoldenEye - Long. slightly boring. Things just sorta happen
+                without much setup? Feels like a movie made in the 70s but this was made in 95 its so confusing</span>
+        </li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Death Becomes Her - The special effects hold up, bruce willis as
+                ernest shines. Both women also are spectacular ahh</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Gelngarry Glen Ross - Ok so i didnt like this. I watched it
+                because a podcast i listen to kept joking that its wild this movie is on UMD and so i was like
+                &ldquo;lets give it a listen&rdquo; and its just a bunch of sad old guys trying to scam people and it
+                was a real slug to get through. The most lively part is at the start where alec baldwin says cunt and
+                faggot in the same sentence and is then never seen again. </span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">The Phoenician Scheme - Parts of this feel like live action
+                fantastic mr fox. Other parts are shot outside and feel natural? Its strange because i enjoyed it, as
+                his last few movies have felt very stagey in both an narrative and overall style so this one feeling
+                like its just normal people saying words normal people would actually say? fun</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Squid game s3 - boy howdy did this split ruin the show, its
+                absolutely not a 3rd season its just the end to s2 but netflix be netflix. There are some characters
+                that speak english and they sound dubbed? Or like are the most english voices youve ever heard. It also
+                sorta looses the plot on how moustache twirling evil people can be but idk</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Goodnight and good luck </span></li>
+    </ul>
+    <h1 class="c6" id="h.bkgrf75f69wo"><span class="c3">Homophobia on a train?</span></h1>
+    <p class="c1"><span class="c0">Look. I am typing this during a work meeting mainly for myself? Idk I gotta just get
+            this out because I also know this is nothing compared to what women or other queers get but hey baby&#39;s
+            first harassment has got to me. Oh also it was on the metro. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also I&#39;m just proud of myself for in the moment handling it well by drinking
+            heavily and not peeling off my nail polish in the bathroom. Ok its been a few more days and really i think
+            the bit that got to me was after it happened i spiralled and went &ldquo;damn. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">If i got stabbed then thats a hell of a way to come out to my family&rdquo; and i
+            think that anxiety of it escalating (which it didnt!) just spooked me and have i even said what happened
+            idk, i know sarah joked that it would be going in here but fuck it, it is now because like. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Idk homophobia scary and like boo to the youths ok im just gonna copy a message i
+            sent to a few people because i don&#39;t wanna get facts wrong and also idk im gonna stop thinking about
+            this i have another fucking inspection to worry about and i just undid my nails because they wereall
+            scruffed up from me cleaning and like. Fuck i just need a holiday</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Sun 5:46&#8239;PM</span></p>
+    <p class="c1"><span class="c0">You sent</span></p>
+    <p class="c1"><span class="c0">Just had a youth on the train go &quot;bro are you gay&quot; becuase of my nails and
+            O went &quot;yea&quot; and he scoffed and said &quot;oh that&#39;s disgusting&quot; And then the much
+            smaller lad with him went &quot;bro what&#39;s wrong with you&quot; and came back to apologise to me</span>
+    </p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">(now i assume it was because of the nails and not the cropped top i was wearing but
+            who knows)</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>Anyway sorry that was a lot uhh, the next part is me slightly loosing my mind over dexter but
+            first i wanna bring up a lil story i remembered because someone once asked me like &ldquo;how do you think
+            your bi&rdquo; and i realised that when i was like 15? 16? I was in victoria down at queenscliff victoria
+            (down past gelong, the estblishement is here but it wasnt this place but idk don&#39;t stalk me </span><span
+            class="c7"><a class="c9"
+                href="https://www.google.com/url?q=https://maps.app.goo.gl/M3FgVomy76PRHYe89&amp;sa=D&amp;source=editors&amp;ust=1751248518052930&amp;usg=AOvVaw3FUH1Nh8m1bjgOMTU8Pe5o">https://maps.app.goo.gl/M3FgVomy76PRHYe89</a></span><span
+            class="c0">&nbsp;) and while there we went up to the new pop up roast chicken reasturant. They were known
+            for their roast chicken and gravy rolls (They were great) (Also i was angry at my fucking father for
+            ordering the salt and pepper squid and then complaining that it wasnt good like it WAS A CHICKEN POPUP) but
+            there was a waitor there who wouldve been the same age as me who was wearing a demin apron and shorts. And i
+            remmeber at the time being so fucking embarassed because he seemed so cool, but absoltuely i just had the
+            hots for him and didnt know what that was about because like why would i like men im not gay thats a thing i
+            would never be (jims the camera) anyway enough of this onto dexter</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c6" id="h.vcmylcswjsgw"><span class="c3">Bootlegs </span></h1>
+    <p class="c1"><span class="c0">Ok so i realised that you could pay money for bootlegs instead of having to grovel or
+            trade and uh, now i have a small collection, have i watched many of them yet no i havent. But also - theres
+            a big culture of not leaking so if you want any i absolutely never could. Like if you were to ask me what i
+            had i would never tell you. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c6" id="h.z8svhssrh2dy"><span class="c3">Playing mission impossible on the Nintendo 64</span></h1>
+    <p class="c1"><span class="c0">So I found out this game exists and immediately purchased it. Then the next day I
+            went &ldquo;wait where is the N64 that I have?&rdquo; Important note: this is not my childhood N64, my first
+            console was the PlayStation 2 or technically the Gameboy colour but I digress. In like year 4 my mum&#39;s
+            friend was moving and there was an N64 in a milk crate with 1080? I think that was the games name. And I
+            said &ldquo;oh that&#39;s cool can I borrow that&rdquo; and they said sure. And I&#39;ve had it ever since.
+            Now the fun thing is that in the move I&#39;ve managed to misplace the cables so I went to the games men and
+            bought cables going &ldquo;no I&#39;m not spending $70 on a N64 to HDMI cable that is nonsense of course my
+            tv has composite inputs&rdquo;. Anyway I got home and found out I have four HDMI plugs and an aerial input
+            so I started googling. Annoyingly everyone on Reddit recommended the same fucking upscaller (takes the input
+            of old console and makes it digital for new tv) which was gonna be like $500 bucks minimum (and the fucking
+            store owner was like &ldquo;no I am not lowering my shipping costs to Australia lol&rdquo; so I was angry at
+            them) - then finally I found another Australian lamenting about this and they were pointed to the fact on
+            AliExpress there&#39;s a knock off box for $45 and I was so happy. A week later it arrived. Plugged it in
+            and was excited to turn on the console. And just bars...... 2 hours later of plugging and unplugging the
+            console I had to torn apart and then I remembered it&#39;s a console from the 90s. One quick blowie into the
+            expansion port later and it was working fine. So anyway I&#39;m a gamer.</span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image11.jpg"
+                title=""></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c6" id="h.gtjkbjdqr5r0"><span class="c3">Dexter (tv show)</span></h1>
+    <p class="c1"><span class="c0">Ok dexter can we talk about dexter ok good because im gonna talk about dexter - im
+            only 2 season in and it consumes me. So to start off with this ran from 2007 to 2013 and had 8 seasons.
+        </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">All 12 episodes being about an hour long. So thats 96 hours of dexter. Dexter stars
+            dexter morgan as an man with no emotions but the desire to kill but also he is just so charming? The man
+            puts on a mask so well and so many points im like &ldquo;dang this is obviously an mask but its so charming
+            and believable&rdquo; but wait you may have heard me say before that there are only 96 hours well nope there
+            are 3 more (tehcnically 2 but the third is about to be released) the first is a sequel show set in the
+            modern day and the 2nd is a prequel which is confirmed to get a second season. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">The third is a sequel to the sequel which makes it a sequel to dexter but now his in
+            new york. Ok so the first thing to note is this show is set in florida so everyone is so fucking sweaty its
+            the most realistic shit ive ever seen, and also so many times it has camera shots which are so effective at
+            their job of making you feel uncomfortable but sadly thats only in the first few eps of season 1. Eventually
+            it goes bland anyway the other fun thing is finding out that the show is based on a book, now you might go
+            &ldquo;oh so all 8 seasons are based on the books&rdquo; </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">NOPE SEASON 1 ENDS WHERE THE BOOK ENDS. 11 SEASONS OF GOING OFF THEIR OWN RAILS.
+        </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Ok so heres a fun thing about shows that run for this long, eventually the get a new
+            showrunner and then the new person comes in and wants to make a big swing in the story to make there mark.
+            So like for example you might hear the storyline of &ldquo;dexter has a surprise brother who is also a
+            serial killer and they both have their dark passanger because they were trapped in a shipping container
+            while their mother was killed&rdquo; and go &ldquo;oh so thats like a season 4 or 5 reveal right?&rdquo;
+        </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">NOPE END OF SEASON 1. 11 EPISODES WITH DEXTER MORGAN AND YOU LEARN THIS SHIT. </span>
+    </p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">its wild! It does feel earned but also the show has the energy of something thats not
+            run out of steam but theyre already looking concerned at the coal supplies. Ok so this is scatter shot but a
+            real funny thing about shows that go for this long is like, every time someones about to be like
+            &ldquo;dexter i know youre a serial killer&rdquo; its like.</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Ok but thats clearly not going to happen? There are 8 seasons of this show his not
+            gonna get put in prison at the end of s2. Which ins ome ways make it way more interesting because its not
+            like &ldquo;oh my god is he gonna get out of this&rdquo; but is way more &ldquo;how the fuck are they gonna
+            bend over backwards to get him out of this&rdquo;</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Anyway another thought is that the show is actually funny, the amount of times this
+            grown ass man says &ldquo;Harrys Rules&rdquo; - Harry of course being his cop foster and then adopted
+            farther who taught his son dexter that he could let out his dark passenger but only in ways that would
+            punish criminals but the way this 35 year old man talks about his daddies rules are just outstanding.
+        </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also the show is actually funny? There are so many moments that actually made me
+            chuckle. Like while i wrote this a noterry just said &ldquo;were all going to die eventually&rdquo; and like
+            damn its nice to watch stuff. Another fun thing is that there are a few shots in one episode where dexter is
+            driving around and it is so clearly shot on a handycam because the rest of the show is shot on 35mm so it
+            looks crisp and HD so the wierd like &ldquo;oh its 2007 we don&#39;t need to worry about HD&rdquo; shots
+            look so outta place. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Theres a whole lot of this show that also iso so good because the lighting is like,
+            done well? Like done by someone who cares and knows what their doing and their job isnt just &ldquo;make
+            everything lit up&rdquo; but there are shadows! Bits where its very bright! And then parts where people are
+            in shadow its so nice. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Ok also im too lazy to figure out how to make my friends american paramount plus
+            subscription work in australia so im watching this all on plex and there are 0 subtitles. Like normally fine
+            but also, there are so many bits where people speak spanish and i feel so clueless but also dexter feels
+            clueless so idk feels appropriate. Also it fucked up season 2 episode 6 &amp; 7 and swapped them with
+            8&amp;9 - which is annoying af. Like it kept saying &ldquo;yes this is file dexter.s02.e06&rdquo; but then
+            it was playing ep 8. I had to watch episode 8 to actually watch episode 6. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">The finale episode of season 2 has them re-creating the title sequence which is
+            interesting because like &ldquo;oh its full circle&rdquo; but then they just keep using it for season 3 and
+            its like. You did it! He got away with something and then was like &ldquo;im on top of the
+            world&rdquo;</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also theres a shot where his being escorted to the cop shop by some fbi people and it
+            cuts to him in a snoricam (the camera rig you use to make the mitchell and webb sir digby chicken cesar
+            shots) and it broke me for a full minute i had to pause it and film it (i dunno how to put videos into here
+            so just enjoy this pic of it, I FORGOT ABOUT GIFS, what you don&#39;t get in this is the audio of me
+            laughing, if the gif doesnt work let me know and ill work out how to share it?)</span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image7.gif"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Now a few things about binging this - the fucking episodes start with like 3 minutes
+            of recaps and then a 90 second theme song so or some eps i end up skipping 5 mins into the episode to just
+            start the new episode. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Ok so in conclusion, new dexter is coming out so im desperaelty trying to watch 8
+            seasons of 2007 tv and its fun. But also i know that i probably wont be feeling the same way by like season
+            7 or 8 because i know it goes bad and like. Ohfa doofa</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also im partially watching this because of this tweet</span></p>
+    <p class="c1"><span
+            ><img
+                alt="" src="images/image3.png"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Ok update, s3? Eh - sorta boring and sorta meandering in the most boring ways. S4 ont
+            he other hand ? jon lithgow just said cunt and faggot to a guy he is such a cool villain and has made the
+            show infinitely more watchable i get why people say this is the best one </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c6" id="h.o6j7axly4beg"><span class="c3">Conclusion</span></h1>
+    <p class="c1"><span class="c0">Welp. september 28th is my kick out day, rentals here seem to be shit (i fucking love
+            the area im in) so idk what im gonna do but somethings gonna happen i guess. </span></p><br><br>
+</body>
+
+</html>
