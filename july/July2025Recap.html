@@ -2,291 +2,238 @@
 
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <style type="text/css">
-        @import url(https://themes.googleusercontent.com/fonts/css?kit=ky9odhRVWnyxVDroe_VFYA7c7O7Rv4XgK7tmmZtm5ws);
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
 
-        ul.lst-kix_le376ks6n71v-7 {
-            list-style-type: none
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .c5 {
+            font-weight: bold;
         }
 
-        .lst-kix_le376ks6n71v-0>li:before {
-            content: "\0025cf   "
+        span.c3 {
+            font-weight: bold;
         }
 
-        ul.lst-kix_le376ks6n71v-6 {
-            list-style-type: none
-        }
 
-        ul.lst-kix_le376ks6n71v-8 {
-            list-style-type: none
-        }
-
-        ul.lst-kix_le376ks6n71v-3 {
-            list-style-type: none
-        }
-
-        .lst-kix_le376ks6n71v-2>li:before {
-            content: "\0025a0   "
-        }
-
-        ul.lst-kix_le376ks6n71v-2 {
-            list-style-type: none
-        }
-
-        .lst-kix_le376ks6n71v-3>li:before {
-            content: "\0025cf   "
-        }
-
-        ul.lst-kix_le376ks6n71v-5 {
-            list-style-type: none
-        }
-
-        ul.lst-kix_le376ks6n71v-4 {
-            list-style-type: none
-        }
-
-        .lst-kix_le376ks6n71v-1>li:before {
-            content: "\0025cb   "
-        }
-
-        li.li-bullet-0:before {
-            margin-left: -18pt;
-            white-space: nowrap;
-            display: inline-block;
-            min-width: 18pt
-        }
-
-        ul.lst-kix_le376ks6n71v-1 {
-            list-style-type: none
-        }
-
-        ul.lst-kix_le376ks6n71v-0 {
-            list-style-type: none
-        }
-
-        .lst-kix_le376ks6n71v-6>li:before {
-            content: "\0025cf   "
-        }
-
-        .lst-kix_le376ks6n71v-7>li:before {
-            content: "\0025cb   "
-        }
-
-        .lst-kix_le376ks6n71v-4>li:before {
-            content: "\0025cb   "
-        }
-
-        .lst-kix_le376ks6n71v-8>li:before {
-            content: "\0025a0   "
-        }
-
-        .lst-kix_le376ks6n71v-5>li:before {
-            content: "\0025a0   "
-        }
-
-        ol {
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 0
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
         }
 
         table td,
         table th {
-            padding: 0
+            padding: 0.25em;
         }
 
-        .c8 {
-            padding-top: 10pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        .c5 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 16pt;
-            font-family: "Arvo";
-            font-style: normal
-        }
-
-        .c0 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Josefin Sans";
-            font-style: normal
-        }
-
-        .c1 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        .c4 {
-            text-decoration-skip-ink: none;
-            -webkit-text-decoration-skip: none;
-            color: #1155cc;
-            text-decoration: underline
-        }
-
-        .c3 {
-            background-color: #ffffff;
-            max-width: 523.3pt;
-            padding: 36pt 36pt 36pt 36pt
-        }
-
-        .c6 {
-            margin-left: 36pt;
-            padding-left: 0pt
-        }
-
-        .c7 {
-            padding: 0;
-            margin: 0
-        }
-
-        .c9 {
-            color: inherit;
-            text-decoration: inherit
-        }
-
-        .c2 {
-            height: 11pt
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
         }
 
         .title {
-            padding-top: 0pt;
-            color: #000000;
-            font-size: 21pt;
-            padding-bottom: 0pt;
-            font-family: "Trebuchet MS";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
+            font-size: 2.5em;
         }
 
         .subtitle {
-            padding-top: 0pt;
-            color: #666666;
-            font-size: 13pt;
-            padding-bottom: 10pt;
-            font-family: "Trebuchet MS";
-            line-height: 1.15;
-            page-break-after: avoid;
-            font-style: italic;
-            orphans: 2;
-            widows: 2;
-            text-align: left
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
         }
 
-        li {
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Josefin Sans"
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
         }
 
-        p {
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
             margin: 0;
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Josefin Sans"
-        }
-
-        h1 {
-            padding-top: 10pt;
-            color: #000000;
-            font-size: 16pt;
-            padding-bottom: 0pt;
-            font-family: "Arvo";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h2 {
-            padding-top: 10pt;
-            color: #000000;
-            font-weight: 700;
-            font-size: 13pt;
-            padding-bottom: 0pt;
-            font-family: "Trebuchet MS";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h3 {
-            padding-top: 8pt;
-            color: #666666;
-            font-weight: 700;
-            font-size: 12pt;
-            padding-bottom: 0pt;
-            font-family: "Trebuchet MS";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h4 {
-            padding-top: 8pt;
-            -webkit-text-decoration-skip: none;
-            color: #666666;
-            text-decoration: underline;
-            font-size: 11pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            page-break-after: avoid;
-            text-decoration-skip-ink: none;
-            font-family: "Trebuchet MS";
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h5 {
-            padding-top: 8pt;
-            color: #666666;
-            font-size: 11pt;
-            padding-bottom: 0pt;
-            font-family: "Trebuchet MS";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-
-        h6 {
-            padding-top: 8pt;
-            color: #666666;
-            font-size: 11pt;
-            padding-bottom: 0pt;
-            font-family: "Trebuchet MS";
-            line-height: 1.15;
-            page-break-after: avoid;
-            font-style: italic;
-            orphans: 2;
-            widows: 2;
-            text-align: left
+            list-style: none;
         }
     </style>
 </head>
@@ -298,135 +245,71 @@
             and then tidying anyway idk lets start</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
     <h1 class="c8" id="h.k7otgex3d82y"><span class="c5">Photos</span></h1>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image16.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image16.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Started the month off in melbourne, this sign gave me anxiety and i wasnt
             driving</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image9.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image9.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Stayed at a fancy hotel with my mum and they had a big screen, and also you had to
             use your wooden keycard to call an elevator that tells you which one to get into i loved it</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image8.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image8.jpg" title=""></span></p>
     <p class="c1"><span class="c0">The shower also had a porthole which was awkward but also nice</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image2.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image2.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Went opshopping and saw this fuckin thing</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image6.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image6.jpg" title=""></span></p>
     <p class="c1"><span class="c0">And also these, my mum and i were somewhat in shock because this is the same artist
             as the painting my grandfather had above his bar for the last 30 years and seeing other ones in the wild was
             outstanding and emotional?</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image14.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image14.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Finally in melbourne went to see beetlejuice, saw it with my mum because she always
             went on about how she loved the movie growing up so i had to bring her, i fuckin loved it and was openly
             crying during home once i realised its lydia hitting acceptance its beautiful</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image3.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image3.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Excuse the crotch pic but i saw superman and ate mini m&amp;m&rsquo;s and was like
             &ldquo;dang these are hard to eat&rdquo; got home and realised i had at least 2 squished into my shirt and
             jeans</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 576.00px; height: 768.00px;"><img
-                alt="" src="images/image12.jpg"
-                style="width: 576.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image12.jpg" title=""></span></p>
     <p class="c1"><span class="c0">I sat outside my building waiting for a frined to pick me up and my gay neighbour
             came by and said i looked good and it was an complement i still am living by</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image5.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image5.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Finally dealt with my ikea bed, it sucked! Its bed head was basically non-existance
             and these slats. These fucking slats took me like 4 hours to put together. And they fucking suck for a
             memory foam mattress. They are so soft that the mattress oh man it stunk, i have an normal koala one now and
             its so much better</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image15.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image15.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Lived the sad single mans existence for 2 weeks and slept on a mattress on the floor
             and it was strange</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image4.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image4.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Moving boxes! These things ruined my life (not really they were wonderful but my
             apartment was not big enough for this) also i was up at 5:15 because they would arrive between 6 and 9. They
             arrived at fucking 5:45</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image7.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image7.jpg" title=""></span></p>
     <p class="c1"><span class="c0">For my mums birthday we went up to my grandparents house in the country and she
             brough along her friends dogs because they were having a 21st birthday and one of these dogs has worse
             anxiety than me</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image11.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image11.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Starting a fire rules, also we listened to the hottest 100 aussie triple j thing
             while we ate dinner and played pool and the app/website for triple j suck or just hated country wifi but it
             was such a good finale few songs - veronicas being so high up ripped</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 1020.00px; height: 768.00px;"><img
-                alt="" src="images/image1.jpg"
-                style="width: 1020.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image1.jpg"></span></p>
     <p class="c1"><span class="c0">The sunsets in the country are just so pretty? Im gonna miss going up here</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image13.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image13.jpg" title=""></span></p>
     <p class="c1"><span class="c0">Like ah its just so nice</span></p>
     <p class="c1 c2"><span class="c0"></span></p>
-    <p class="c1"><span
-            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 768.00px;"><img
-                alt="" src="images/image10.jpg"
-                style="width: 578.00px; height: 768.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
-                title=""></span></p>
+    <p class="c1"><span><img alt="" src="images/image10.jpg" title=""></span></p>
     <p class="c1"><span class="c0">And finally, movers did everything in my apartment in under 3 hours and im so
             thankful for them because holy shit it wouldve killed me to do it</span></p>
     <h1 class="c8" id="h.fx24kjw9pyu6"><span class="c5">Media</span></h1>
