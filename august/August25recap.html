@@ -1,0 +1,448 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .c5 {
+            font-weight: bold;
+        }
+
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c7 doc-content">
+    <p class="c1"><span class="c0">August! The month that was. As i write this intro it&#39;s the 15th August 2025 at
+            6:08pm and I am sat at the bar at Jacobi&rsquo;s tiki bar. The happy hour cocktail of the month was great
+            and I&#39;m now having a pina colada which is fine (it&#39;s a slushie drink and I always forget how much I
+            hate frozen drinks) anyway this month has been so far me just trying to tidy my apartment and failing -
+            update, i finished it and then drove to Bathurst to pickup Mae and then drove home becuase the trains were
+            being dickey</span></p>
+    <h1 class="c3" id="h.k7otgex3d82y"><span class="c6">Photos</span></h1>
+    <p class="c1"><span><img
+                alt="" src="images/image3.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Started the month by cleaning out my old apartment, the real estate agent
+            sucks</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image5.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Bought some VHS tapes because i was depressed and no i don&#39;t have a player but
+            its fun to have them</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image9.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Saw this ad while out and about and the bag looks so zooted i adore it</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image8.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Saw a play with my mum at the opera house and got wine drunk, pictured is me trying
+            to get back to my seat holding popcorn and lollies without arising suspicion that im drunk</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image2.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Then went to see the naked gun with my mum after that, fuckin loved it</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image11.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Don&#39;t know why i took thispic of the subway at surrey hills but it is
+            funny</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image16.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Hey imma seeing them soon</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image10.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Bought this vinyl for $15, i truly hate the show but i think its funny to own (i also
+            have multiple bootlegs of it and i am going to watch them one day and make a powerpoint called &lsquo;i
+            don&#39;t think andrew lloyd webber understands cinderella&rdquo;)</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image12.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Found out the tiki bar near me does happy hours and like dope</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image1.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">I know this is a creep shot but this guy at kmart had a fucking sick jumper that was
+            just a cross stitch sown on the back it looked cool</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image4.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Oh yeah so i got properly drunk drinking pints of 6% lemon drinks, failed to do the
+            sudoku and had to irish goodbye from the party as i was so drunk</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image13.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">On my way home tho i took this selfie with the poster of the new naked gun</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image14.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">My friend nikki drew shrek from memory and i got a print of it and my mum saw it and
+            with full sincerity went &ldquo;oh thats you!&rdquo; and when i said it was meant to be shrek she went
+            &ldquo;yeah but it looks like you&rdquo;</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image7.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Saw this fucking jimny at ikea and fuck its so much</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image15.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">And finally i was cleaning the other day and just went &ldquo;wait i like how my
+            haircut looks??&rdquo; anyway thats fun and cunty</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <h1 class="c3" id="h.fx24kjw9pyu6"><span class="c6">Media</span></h1>
+    <ul class="c9 lst-kix_le376ks6n71v-0 start">
+        <li class="c1 c2 li-bullet-0"><span class="c5">Dexter</span><span class="c0">&nbsp;- im on season 7, the show
+                has gotten so bad i don&#39;t know why i keep watching it</span></li>
+        <li class="c1 c2 li-bullet-0"><span class="c5">The Naked Gun 2025 - </span><span class="c0">Is good! Is it as
+                good as the original? No, that is one of my favourite movies of all time, but this one is its own thing.
+                It has one joke during a scene with a cigar that i still occasionally think about and laugh to myself
+                about which is a good sign. I saw it in a tiny cinema full of people laughing but also explaining the
+                jokes to eachother and i wanted to strangle them all</span></li>
+        <li class="c1 c2 li-bullet-0"><span class="c5">Thursday murder club</span><span class="c0">&nbsp;- This is a
+                netflix movie based off a book. The book is one my mum fucking loves, there are 3 of them in this series
+                and she would listen to the audio books while driving to and from my grandparents so much so that when i
+                was accompanying her once she started quoting it and like dang. Now the movie? Its fine. Its got some
+                pacing issues and also the most obvious foreshadowing imaginable with character dialouge thats like
+                &ldquo;oh my god dude youre about to die now that youve said that&rdquo;</span></li>
+        <li class="c1 c2 li-bullet-0"><span class="c5">Its always sunny in philadelphia </span><span>- man the final 3
+                eps of this season are fantastic. The finale ep has some stellar devito acting and theres a dedication
+                to an actress who passed and its just so beautiful while also doing a parody of hawk tuah (don&#39;t
+                care to get the spelling of that correct)</span></li>
+    </ul>
+    <h1 class="c3" id="h.eoumfrenrjss"><span class="c6">Microsoft teams beauty filter</span></h1>
+    <p class="c1"><span class="c0">It got rid of my nose i cant get over it</span></p>
+    <p class="c1"><span class="c0">Filetr off </span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image17.png"
+                title=""></span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Filter on</span></p>
+    <p class="c1"><span><img
+                alt="" src="images/image6.png"
+                title=""></span></p>
+    <h1 class="c3" id="h.bo86svi6qg7j"><span class="c6">Finstagram</span></h1>
+    <p class="c1"><span class="c0">I don&#39;t know why but i found out this is a thing on a pdocast and the allure of
+            having a second account to post bullshit on seems fun but also i don&#39;t post? Or is it that i don&#39;t
+            post because i don&#39;t want my family or people from highschool to see but in making one of these i would
+            be giving into facebooks desire for people to post more. Much to consider. But if i do end up making one ill
+            probs stick with jeremyjeremyjeremyjeremyjer because its a fun monica (like from friends)</span></p>
+    <h1 class="c3" id="h.bkgrf75f69wo"><span class="c6">Media WAtch</span></h1>
+    <p class="c1"><span class="c0">I have only started watching media watch recently but ive fallen into an rabbit hole
+            of watching old episodes on youtube and its outstanding just how wild shit used to be and stometimes still
+            is! Also the april/march 2020 ones are particularly funny to watch because paul barry was like &ldquo;i
+            don&#39;t know if ill continue doing this from the studio&rdquo; like, aw buddy you don&#39;t know whats
+            about to hit you. Also im lowkey glad paul barry is retired because some of the ways he treated online
+            topics felt so boomer coded - also that trans bit was really disappointing</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <h1 class="c3" id="h.ao79io7sdtt7"><span class="c6">Previously on brain dead</span></h1>
+    <p class="c1"><span class="c0">I just wanna recommend this again because i think its wonderful. I have never seen
+            the tv show brainDead but at the start of every episode there is a recap of the previous episode. And that
+            recap is done in the form of a song by jonathan coulton (who you might know from portalcredit songs, that
+            time glee stole his cover of baby got back, contributing lyrics to the spongebob musical) and i just adore
+            them</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c10"><a class="c8"
+                href="https://www.google.com/url?q=https://www.youtube.com/playlist?list%3DPLLFXf6fKQkjiDuS6xfZvwyKK419hc3Zem&amp;sa=D&amp;source=editors&amp;ust=1756617375278873&amp;usg=AOvVaw39DuZDPRzJUTdDA9E33yBP">https://www.youtube.com/playlist?list=PLLFXf6fKQkjiDuS6xfZvwyKK419hc3Zem</a></span><span
+            class="c0">&nbsp;</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <h1 class="c3" id="h.7gt6lei8i0gg"><span class="c6">Accessories help</span></h1>
+    <p class="c1"><span class="c0">I want to get into wearing more bracelets but i have no idea where to look, if you
+            know of things that you think would suit me lemme know</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <h1 class="c3" id="h.k7ooys310gzl"><span class="c6">The XPS 15 9500</span></h1>
+    <p class="c1"><span class="c0">Editor jack: ok this whole bit is just me winging about my laptop so you can give it
+            a miss if you want</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">30th april 2021 i purchased a dell xps 15 off dell ebay because it was like a grand
+            off. Its a 15&rdquo; laptop which was coming from my previous laptop i had owned since highschool it was so
+            cool to own a new one. It had usb c charging points on both sides! And it could actually charge from it!
+        </span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Now immediately a problem i learnt with this thing is that the webcams quality is the
+            sorta thing i wouldve killed for in 2008 but now? Ohf. also the microphones are good but as soon as you dare
+            touch the laptop that is all they pickup. Now these are just two minour nitpicks! The major nitpick i had
+            almost immediately was the fact this thing gets so fucking hot, like to the point where i had to buy a
+            laptop riser because it felt like it was burning my legs (I later discovered that the ability to
+            enable/disable the fans was locked behind another piece of dell software that did not come pre installed) oh
+            and the fans. The FANS. whenever it was on you could tell because it sounded like it was taking off holy
+            shit. </span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Now theres a lot of complaining there but also the i7-19759H and nvidia geforce gtx
+            1650ti (4gb) did inspire me to start editing videos again which lead to me being commissioned and paid to
+            edit videos (still crazy that happened) so i am grateful to the laptop. But also as i wrote that another
+            problem arose which is the touchpad is the most finicky thing ive ever experienced. You can click by
+            clicking on it but sometimes a section of the touchpad just wont work. And sometimes when you tap it works
+            but othertimes you have to press the entire thing down for it to register a click but that time as i was
+            typing it took the upwards motion of my leg pressing the underside as my palms push down to register a
+            press. </span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also the battery gets like 3 hours if im lucky how have i lived with this for so long
+            - this whole thing is leading up to me saying &ldquo;gee i need to buy a macbook pro and just stfu&rdquo;
+            but i wanna keep winging</span></p>
+    <p class="c1"><span class="c0">A new thing that happened 2 years ago (actually it started the day i tested negative
+            for covid damn) is that it boot loops twice after starting up, and then refuses to charge. The solution is
+            to start it up. Then hold down the power button. And then kill it again, and then when its turned off plug
+            in the charger until the charging light turns on (which is obnoxious but also convenient) and then you can
+            turn it on. But sometimes you plug in the charger and the light thats always on the end of the cable (which
+            killed me before i started sleeping with a sleep mask) will turn off which means you have to start the
+            progress again. </span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also sometimes i open the lid and the keyboard turns on and i have to go through that
+            whole thing</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also when it starts up or resumes from sleep it takes a solid 2 minutes for the wifi
+            to connect and this might just be a windows thing but im on a roll. </span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Oh also the carbon fibre thing is starting to peel up</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Anything else? I don&#39;t think so. oh yeah it gets angry when i charge off a 65w
+            charger i use in my lounge room and sometimes makes the trackpad&#39;s latency very slow</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Also a fun thing about the &ldquo;sleep&rdquo; functionality is that the number of
+            times I will shut the lid and it just won&#39;t sleep is staggering. Either the video keeps playing or the
+            fans go at full blast and I come back to it either dead or fucking scorching </span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Another new fun thing im experieincing is that im playing a chill puzzle game. And
+            then it shuts down because ive got it on quiet thermal settings. Ok annoying! So i restart and then open the
+            dell power settings to change it. Its been 5 minutes since i clicked to open it and its only just opened
+            dell you guys suck.</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Now you might just say &ldquo;jack. Youve wanted to upgrade since december last year
+            what gives&rdquo; and the answer is i am so bad at buying new tech because of the fucking anxiety that the
+            next one is right around the corner and it will solve all my problems. Also i like how my python libraries
+            are setup and i hate seting up python</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">But hey why have i written all of this? What gives? And to that i say fuck you buddy,
+            i don&#39;t know what gives! And neither do you! Words ont he page are the sins of gutenberg that we are yet
+            to atone for i know not of their meaning</span></p>
+    <p class="c1 c4"><span class="c0"></span></p>
+    <h1 class="c3" id="h.skdpkz7ak8zy"><span class="c6">Outro</span></h1>
+    <p class="c1"><span class="c0">So that was that, idk what comes next but who does!</span></p>
+
+    <img src="https://i.imgflip.com/5vlzlc.jpg" style="
+    width: 60px;
+">
+</body>
+
+</html>
