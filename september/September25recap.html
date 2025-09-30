@@ -1,0 +1,406 @@
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .c5 {
+            font-weight: bold;
+        }
+
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+
+<body class="c7 doc-content">
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>Gooday friends, as i write this i am sitting outside in my big comfy chair on the balcony, i
+            just watched the new only murders in the building (mreyl streep is a fucking powerhouse in evertyhing she
+            was so good in devil wears prada) and the weather is just so nice, it snot cold its not warm its just
+            lovely. And as i look around i am wondering why i don&#39;t do this more often (The answer is that i get
+            bitten alive, i can already see the bugs swirling) anyway september! 9/11 happened and it was also my
+            brothers birthday (i got him a CD player and an leather notebook i wouldve gone for the dumb AI hardware but
+            the humane pins are still super expensive and the rabbit still isnt funny enough to buy for a shitty android
+            phone) but here we are barrelling into october. </span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h1 class="c5" id="h.k7otgex3d82y"><span class="c4">Photos</span></h1>
+    <p class="c2"><span><img alt="" src="images/image10.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">The month started off with the lovely friend Mae coming to visit for a few nights, we
+            went into the city and i saw this fella on a screen and lost my shit (i later found all of these fellas on
+            the transport nsw&rsquo;s website and god its good)</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="images/image2.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">Saw this mannequin at reverse garbage and calling it a mannequin and not the creature
+            feels disingenuous. </span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="images/image11.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">Saw Aunty donna</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="images/image9.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">They were real good (they kept trying to tell the audience &ldquo;don&#39;t get up
+            and shout pud at us&rdquo; because there was a real bad time at one of their last sydney shows)</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="images/image3.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">Sitting front row ruled</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="images/image1.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">Saw a stool that was bees outside manly library, was scary to walk past ngl</span>
+    </p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span>
+            <img alt="" src="images/image7.jpg" title=""></span></p>
+    <p class="c2"><span class="c0">Got dressed up to play poker - didnt commit hard enough ngl need to get a tophat
+        </span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span><img alt="" src="images/image6.jpg" title=""></span></p>
+    <p class="c2"><span>Had dinner at my parents for my brothers birthday and panicked thinking that i should be an
+            adult and bring something, we ended up having takeout so me making and then bringing an potato bake was
+            dumb. What was also dumb was me putting the small milk bottle of cream into the woolies chiller bag because
+            it spilt all through the bag and also all through my fucking car and stunk so bad. </span></p>
+    <h1 class="c5" id="h.fx24kjw9pyu6"><span class="c4">Media</span></h1>
+    <ul class="c6 lst-kix_le376ks6n71v-0 start">
+        <li class="c2 c3 li-bullet-0"><span class="c0">Wednesday s2 &nbsp;- god this sucks, i watched this while
+                hungover in bed and just the entire time was like &ldquo;What is the point of this&rdquo; it somewhat
+                does the same thing as s1 and just was so eh. Just fucking make an adams family show you cowards</span>
+        </li>
+        <li class="c2 c3 li-bullet-0"><span class="c0">NCIS Sydney - ok look, i watched this when it originally started
+                airing but then fell off for multiple reasons, then the other night i couldnt sleep and decided it would
+                be a good idea at 1am to watch the entire show and plot out where in sydney they were because i thought
+                one of the ocean pools they were at was one where i had a panic attack at (turns out its not) and then i
+                made a spreadsheet tracking the locations of all of s1 throughout the next few days and started trying
+                to write up a script with the intention of making like a bonus video thing where i ranted about ncis
+                sydney but by the end of s1 i actually enjoyed it? Don&#39;t get me wrong most episodes are the most
+                cookie cutter thing you can imagine and almost every interaction plays out the same but like. Idk its
+                just nice to turn brain off and enjoy something thats dumb but not offensive? It didnt feel like i was
+                getting hit by a brick every 5 seconds so yeah, im ncis sydney pilled</span></li>
+    </ul>
+    <p class="c2"><span><img alt="" src="images/image8.jpg" title=""></span></p>
+    <p class="c2"><span>Ok the one thing that got me was this, its a list of suburbs with latitudes and longatudes (half
+            cutt off sorry) but i had a real autism moment and placed them all on a map. Half of them are very very
+            wrong (like in the ocean wrong) and half are correct? Very confusing also why this is supposed to be the
+            haul of an truck and that route makes no sense. &nbsp;Oh also one of the lats&amp;longs is in melbourne lmao
+            &nbsp;</span><span class="c8"><a class="c9"
+                href="https://www.google.com/url?q=https://www.google.com/maps/d/viewer?hl%3Den%26mid%3D11GCUMPS80wXX0OX4aw9cMtQ3LCGbZNc%26ll%3D-35.63395306764927%252C148.30076389999996%26z%3D8&amp;sa=D&amp;source=editors&amp;ust=1759231465544483&amp;usg=AOvVaw1rnOHvYeq6bvK2NdqigYeU">https://www.google.com/maps/d/viewer?hl=en&amp;mid=11GCUMPS80wXX0OX4aw9cMtQ3LCGbZNc&amp;ll=-35.63395306764927%2C148.30076389999996&amp;z=8</a></span><span
+            class="c0">&nbsp;</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <ul class="c6 lst-kix_le376ks6n71v-0">
+        <li class="c2 c3 li-bullet-0"><span class="c0">Metroid prime remastered - i started this again and have just
+                unlocked the thermal visor. The control scheme is truly unscruciable but god damn the metroid games are
+                so good, like for every indie game that says its a metrodivania the original metroid puts it to fucking
+                shame (also because most of them include obligatory dark souls mechanics now)</span></li>
+        <li class="c2 c3 li-bullet-0"><span class="c0">Dk bonanza - DK. DONKEY KONG. it feels so good to just destory a
+                level but also some of the challenges make me feel like the cuphead video where the person couldnt get
+                past the tutorial</span></li>
+        <li class="c2 c3 li-bullet-0"><span class="c0">Chibi robo - I started playing this while mae was in town
+                (don&#39;t know if ive mentioned this already but friend mae stayed with me for a week it was lovely,
+                also im writing this in reverse i could just go up and add it and actually i might) but i just thought
+                it would be fun to play something while we chilled and this game is crazy, again control scheme is
+                inscruciable but! We joked that the plot of the game is this 3&rdquo; tall robot trying to cuck this
+                husband and fuck the wife and lemme tell you. The game does not shy away from this happening im gonna be
+                devo when the husband and wife get back together by the end</span></li>
+    </ul>
+    <p class="c2"><span><img alt="" src="images/image4.jpg" title=""></span></p>
+    <ul class="c6 lst-kix_le376ks6n71v-0">
+        <li class="c2 c3 li-bullet-0"><span class="c0">Fortnite - the urge to ask &ldquo;Where we dropping boys&rdquo;
+                returned and im back in, blitz is a new game mode where the rounds last like 5 mins and its hitting my
+                brain perfectly (also because there were several rounds where i got iron mans blasters and infinite ammo
+                and just kept winning) but also in the main game i got to be the giant robot from power rangers so thats
+                neat. </span></li>
+        <li class="c2 c3 li-bullet-0"><span class="c0">Bright Star - Steve martin can write a fucking song ill tell you
+                that much, this show ripped. The story went so many places i didnt expect and the second song of the
+                show made me and many other people in the theatre openly weep its so beautiful. Am booked in to see it
+                again on saturday with my mum god its invigorating. </span></li>
+        <li class="c2 c3 li-bullet-0"><span class="c0">The Devil Wears Prada - Why did i watch the devils wear prada on
+                a random tuesday night? Wish i could tell you but god damn is meryl streep incredible. so many moments
+                that had me going &ldquo;oh dang&rdquo; but also like the fashion wasnt terrible? Like all the vogue
+                stuff was but what not miranda cosgrove was wearing just rocked. No i can get her name ANNE HATHAWAY
+                thank you. </span></li>
+        <li class="c2 c3 li-bullet-0"><span class="c0">The Incredible Mr Ripley - I saw the play of this that sydney
+                theatre company is doing and i suspect this will tour, again had no idea what the original story was but
+                it was fuckin dope. However the show when for 2 hours without an intermission and that can go fuck
+                itself. I also didnt expect it to be gay which was fun. </span></li>
+    </ul>
+    <p class="c1"><span class="c0"></span></p>
+    <h1 class="c5" id="h.bkgrf75f69wo"><span class="c4">Having your work cited at a friends wedding</span></h1>
+    <p class="c2"><span class="c0">This memory came to me the other night as i heard tell of a engagement party from
+            hell for a wedding thats not happening for another 600 days but a few years ago my dear friend Emily (venn)
+            got married, it was lovely yada yada yada but i remember (ok now emily this is not a slight against lachie
+            in any way i just realised youd read this) that his siblings gave a speech and as did hers. His siblings
+            told cute stories about them playing pokemon and other thing (pokemon is the only thing i remember really)
+            and it was like the two younger siblings being like &ldquo;aw big brother&rdquo;. Then Emilys sister jess
+            gets up. And at this point during the night i was double fisting vodka lemonades because i was assured there
+            was going to be a cider available for free (this was later swapped out for another bear the uncles could not
+            agree upon the beers that they liked - i hold no ill will against you emily but the uncles are on watch) and
+            i suddenly remembered that jess had messaged me like 2 weeks prior to ask about my list. Now ive known emily
+            since highschool when we became friends during DesignTechnology where we learned how to draw engineering
+            things and OK FUCK I JUST REMMEBERED THAT I CAME THIRD OH MAN. ok calming down.</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">The story there is that it was me, emily and musashi all were tied for first (the
+            teacher told us so) and the fucker put the woman #1 and the asian guy #2 and left me (white guy) to be third
+            god damn it. </span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Anyway the list, ive been keeping a list since i met emily in year 9 telling tales
+            about all the dumb things shes done. Ive had other people seek me out to report things that have occurred
+            which are list worthy and i always promised emily that the list was only for me and that id never share it.
+            However when i got the message from her sister i sent it without hesitation instantly. I believe that
+            jess&rsquo;s speech started with &ldquo;emily youre great but your friends keep a list&rdquo; and then i got
+            death stared by the bride (a crazy thing to happen at a wedding) and then jess&rsquo;s speech was just a
+            roast of emily for a solid 5 minutes by reading out the many many dumb things shes done. </span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c2"><span class="c0">Anyway the next wedding i went to i drunkenly stopped the father of the groom from
+            giving a speech by man handling him what the fuck was i on. Oh alchol</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h1 class="c5" id="h.94q3s3mh1edu"><span class="c4">Boomers flying</span></h1>
+    <p class="c2"><span>I made this github page that loads a random story from the age where the boomers complain about
+            traveling, its fucking wild and so many of them are like &ldquo;What? Its the 21st century ffs&rdquo;
+        </span><span class="c8"><a class="c9"
+                href="https://www.google.com/url?q=https://pantsmaners.github.io/boomers-flying/&amp;sa=D&amp;source=editors&amp;ust=1759231465559461&amp;usg=AOvVaw2HQl3-oL0hXt8lL2Do-2Ro">https://pantsmaners.github.io/boomers-flying/</a></span><span
+            class="c0">&nbsp;</span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <h1 class="c5" id="h.c3wrdnfks9m0"><span class="c4">Outro</span></h1>
+    <p class="c2"><span class="c0">So, what now? The sands of time continue to slip through the hourglass. Ive started
+            trying to actively write down an lil idea ive had for a scifi story but so far instead of actually writing
+            anything about the sotry down all ive done is write pages of notes and doodles of what the ship could look
+            like. Anyway im feeling actually sentimental so i wont end with a dumb picture of shrek or the cat in the
+            hat or sonic the hedgehog or whatever i just type into google but instead with this picture. Its technically
+            the oldest pic i have on my google photos (dated from the 70s) and i just think its nice (i think its my
+            uncle but my mum is yet to confirm) the reason i feel like ending with this is the other night i randomly
+            opened a video called &ldquo;final render v3.mp4&rdquo; on my desktop only to find it was the slideshow i
+            made for my grandfathers funeral and it got me good and i just feel like sharing nice thing anyway fuck
+            off</span></p>
+    <p class="c2"><span><img alt="" src="images/image5.jpg" title=""></span></p>
+</body>
+
+</html>
