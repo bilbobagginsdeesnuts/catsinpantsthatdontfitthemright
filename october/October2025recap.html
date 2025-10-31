@@ -1,0 +1,482 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .c5 {
+            font-weight: bold;
+        }
+
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c9 doc-content">
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">October is done, now to november. Yues that does make today halloween a holiday i
+            hate (not because oh americans but i was terrified of costumes as kids and hated going door to door so it
+            was always the worst and thats something i just gotta get over) but my solution to this is im going to see
+            sam campbell tonight which will be fun and also im in an apartment building theyre not going to have kids go
+            up and down trick or treeting</span></p>
+    <h1 class="c5" id="h.k7otgex3d82y"><span class="c4">Photos</span></h1>
+    <p class="c0"><span><img
+                alt="" src="images/image14.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">I bought this on a lark at kmart and then got home to find at least 12 different
+            instructions on just what nots you do and a list of numbers so i put it back in th ebox and then my mum took
+            it because she likes crochet and that shit aint for me</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span> <img
+                alt="" src="images/image12.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">At work an wasps nest has started forming outside our conference room window and its
+            so fascinating as it would be so easy to reach out and rip it off but also wasps. And also i don&#39;t know
+            if im allergic to them or not i havent asked my mum yet because all i can think is &ldquo;if you ask someone
+            if you are allergic to wasps the immediate thought is that youve been stung by a wasp&rdquo;</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image10.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Went to see back to the future on some rush tickets and then arrived early and sat
+            next to this old woman and was like &ldquo;fuck who are you&rdquo; and it was driving me nuts (At one point
+            i googled old woman politics and that didnt help) but then a man came over and was like &ldquo;americans
+            have one thing right, they salute their soldiers. Im so thankful for what you served us with&rdquo; and so i
+            took a creep shot sent it to someone and then was like &ldquo;oh yes of course its fucking bronwyn biship
+            the speaker of the house under tony abbott who is now a sky news presenter&rdquo; anyway show was fun i hope
+            she rots in hell</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image15.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">During my works all hands there aren&#39;t enough chairs for everyone so i sit up on
+            the cupboard with my back to the whiteboard, and i got so bored that i just started doodling and it was so
+            funny that after everyone was like &ldquo;damn thebosses kid just sat there still the whole meeting&rdquo;
+            and my adhd ass couldnt sit still for 20 mins without doing something</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image7.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Ok im trying out ascots or idk what to call them its just fun to dress up gay</span>
+    </p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image6.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">I bought a studio amount of ps4 spots games with the intention of doing monster
+            factories and this fella was such a monster, still have no idea how to actually play as him tho</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image8.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Played hot or not at the nrl grand finale, surprisingly not a lot of the
+            queensaldners were bangable</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image17.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Went for lunch with my grandparents at the yacht squadron and my brother drove me, he
+            had this in his car which was great</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image13.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Also saw this boat in the water and it kept looking like it was going to sink, they
+            had to be escorted out of the mooring because it was so windy it was kinda hilarious to watch</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image9.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Then when i went to drive home my brother told me i had a broken break light, so i
+            had to find a new bulb (annoying) get home only to find that the bolt which has a philips head in it was so
+            rusted it was just stripping so back to super cheap auto to get a wrench set and then i fixed it in the
+            carpark all because i didnt want to spend $20 for them to install it</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image18.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">The chair after it broke on me, im still reluctant to sit in them because you know
+            ptsd but also its not real but also it is idk theyre also super uncomfrotable</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image4.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Saw brenan lee mulligan do dnd that was fun</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image11.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Watched the s6 recording for aus taskmaster which had 2 people who i fuckin love so
+            thats fun</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image3.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">I somehow did ok at poker night? Until it was revealed that the dealer was cheating
+            the whole time but i still got a fucking straight in and won big so eat it up fucko</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image1.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Saw nirvana the band the show the movie at sxsw sydney and it was their closing night
+            and i was slightly hungover eating popcorn with no drink, movie good but god damn nerds are nerds</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image19.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Eric set his phone wallpaper to this and i hate it</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image5.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">I wondered why my pc was thermal throttling during fortnite and uh, dust your pc
+            folks (turns out this is still happening for me which is annoying as i want to play the simposns!!!!)</span>
+    </p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image2.jpg"
+                title=""></span></p>
+    <p class="c0"><span class="c1">Returned a bookshelf to ikea 11 months after i bought it and the guy was so rude i
+            hate it (look, should i have been returning it? Maybe not but its their policy! Fuck that guy)</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span
+           >
+<img
+                alt="" src="images/image16.jpg"
+                title=""></span></p>
+    <p class="c0"><span>Saw calmity jane at the opera house and was on a stool and it was fun and Kala Gare came up and
+            sat with me during the intro which was wild as the last time i was in this room was watching her do
+            six</span></p>
+    <h1 class="c5" id="h.fx24kjw9pyu6"><span class="c4">Media</span></h1>
+    <ul class="c7 lst-kix_le376ks6n71v-0 start">
+        <li class="c0 c3 li-bullet-0"><span class="c1">Fortnite - is good! Its fun and im a power ranger now and
+                simpsons is tomorrow or sunday idk timezones </span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">Donkey Kong bananza - i gotta finish it but its so fun to just be
+                an ape going ape shit</span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">The chair company - i love the i think you should leave sketches
+                and this just feels like those but with a narrative. Im still yet to work out if i believe that the
+                conspiracy is real or if this is just one guy having the worst week ever but its fun! </span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">Calamity Jane - Now this shouldve been gay if im honest. Verginia
+                gay make it gay!!! Act 2 started with a hint of gay and then went straight immediately and like
+                eh</span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">Nirvana the band the show the movie - i loved this, if you liked
+                the show youll love the movie. Im not quite in the &ldquo;i cant believe this is being released&rdquo;
+                camp but oh wait theyre talking about that bit ok yes</span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">Phar lap - this was an electro pop swing musical about the life
+                of phar lap. It was a lot of fun and also i didnt realise phar lap only ran like one melbourne cup i
+                thought he dominated for like a decade</span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">The witches of eastwick - i ahvent seen the film but they did a
+                neglected musical of it and it is so good, one of the witches was percefanie from hadestown and she
+                rocked. And one of the others was from beetlejuice as hubsnads new wife delia? Idk its good! The song i
+                love those little towns is in my head and theres a very low quality vhs of the 2003 australian cast with
+                paul mcdermot as the devil and thats fun</span></li>
+        <li class="c0 c3 li-bullet-0"><span class="c1">The celebrity traitors - i had so much of this spoilt through
+                twitter that last night i was like &ldquo;no fuck it im watching the whole thing&rdquo;, did i skip most
+                of the round tables as those are the reasons i hate werewolf ? yes. Also did the site i get them from
+                corrupt the files so sometimes the last 20 mins were missing? Yes. did i have a blast watching allan car
+                be an traitor? Absolutely the finale is next week and i am seated</span></li>
+    </ul>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <h1 class="c5" id="h.bo86svi6qg7j"><span class="c4">Baseball</span></h1>
+    <p class="c0"><span class="c1">I have been influenced into watching the la dodgers play baseball by a friend and its
+            such a wild game. There&#39;s no concept of a tie in the world series so the game the other night that I
+            spent most of my arvo watching went for SIX HOURS because they were tied and then they have had to play
+            another game the next 2 nights in a row it&#39;s bonkers</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span>Do I understand how scoring works? Nope. Am I getting way to involved in the umpire calls?
+            Absolutely. Also for some reason the idea of the new York teams </span><span class="c8">makes</span><span>&nbsp;me
+            angry and for the life of me I cannot work out why.</span></p>
+    <h1 class="c5" id="h.bkgrf75f69wo"><span class="c4">Getting a head injury sucks</span></h1>
+    <p class="c0"><span class="c1">Growing up i played nrl and afl, but i sucked at both of them. Like real bad, i
+            remember catching the ball once in AFL and freezing over what to do &nbsp;(i ended up passing it to sudket
+            fraser crowse no i shant be checking if thats how you spell his name) so i didnt experience head going boing
+            very often (although i did once get properly dumped by a wave during nippers and that stunk) so when i was
+            just in my works conference room leaning slihglty back (like you know not rocking but just applying my
+            weight to the chair) and the fucker snaps off and i end up on the fucking hard floor going &ldquo;ow my
+            shoulder blade hurts&rdquo; it stunk. And then what stunk was that i was on a call with my boss and then
+            went right back to presenting what i was talking about but legit struggled so much to be able to recall shit
+            that i got so worried i googled concussion and had to check that i didnt meet the criteria of the call an
+            ambulance section (i didnt thankfully) but anyway my boss was more concerned that the chairs shouldnt do
+            that vs &ldquo;does jack have a concussion&rdquo; and honestly? It does hurt. Like it fucking stings that he
+            didnt see that happen and go &ldquo;jack go to the doctor you are not ok&rdquo;</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Also the doctor explicitly told me that i shouldnt get another head injury in the
+            next 4-6 weeks and i sorta openly laughed at him, but then later on my brother was like &ldquo;yeah his
+            saying don&#39;t play intensive spots where you can get an head injury&rdquo; and it made so much more sense
+            then what i was thinking (which is me falling off a chair)</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0"><span class="c1">Ive also had a sore wrist from thai which isnt a head injury but is just annoying,
+            like its not stopping me from doing things but just making me aware of my wrist which ew</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <h1 class="c5" id="h.e4k8vw9nmmue"><span class="c4">Outro</span></h1>
+    <p class="c0"><span class="c1">And so thats a month done. Have i been thinking about april fools already? Possibly
+            who can say. Well i can if i don&#39;t have your address you should tell me because april fools is coming up
+            and you know what that means</span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+    <p class="c0 c2"><span class="c1"></span></p>
+</body>
+
+</html>
