@@ -1,0 +1,436 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .c5 {
+            font-weight: bold;
+        }
+
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c7 doc-content">
+    <i> hard to read? read online here </i>
+    <p class="c4"><span>Yo its november. No its the end of november pshyc its almost december. Christmas! New years!
+            People whose birthday is on the 31st or 30th (marie im sorry i always foget i know ere a week apart but i
+            don&#39;t know if that means 30 no that must mean 30th unless im sutpid i remember the week part i refuse to
+            look it up tho) anyway i just finished watching the first 2 eps of the gay hockey show and gotta say, its
+            funt o watch a show thats both incredibly horny and also somehwat riverdale. Anyway onto the pics</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <h1 class="c2" id="h.k7otgex3d82y"><span class="c5">Photos</span></h1>
+    <p class="c4"><span><img alt="" src="images/image9.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Went to a bar for isabellas birthday and they had a signed bradbery picture, there
+            was a tonne of them on the walls which was a real throwback to my dads work when i was growing up but this
+            one is just nice to see, good on him</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image10.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">As apart of having to deal with my grandparents stuff my mum now has most of it, and
+            the breadth of different types of cards he had were staggering, like why the fuck does alice springs have an
+            hotel casino? Is it still there? Why am i not in the alice springs casino wearing shorts and a hawaiian
+            shirt drinking thooeys new and loosing the house? Why is that not the dream!</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image3.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">In a continuing trend i get bored during work meetings and doodle, im just proud of
+            myself not drawing any dicks. I don&#39;t think any of these things have names but if youve got any ideas
+            hit me up</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image19.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Ok this is the kfc bahn mi. Ordering this was a real low point in my mental health.
+            And it did not help one fucking bit. Its basically an twister but in a baguette. The sauce is so
+            overpowering and bad - the veggies mixed with them stink. I can confidently say that ive bounced back from
+            this low and now know to not order it again. </span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image15.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">I was in the westfield in the city killing time before a show and saw a huge fucking
+            line for the oasis tour merch store and was like &ldquo;lmao oasis are in town cool, why do people want
+            merch&rdquo; (this is what good writers call foreshadowing)</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image13.jpg"
+                title=""></span></p>
+    <p class="c4"><span class="c1">I saw the lovers and ill put thoughts further down but the main thing is, both men
+            started off looking real hot in all black and ruffles. Then they came out in this denim which did no favours
+            for either of them. I also got rush tickets and was sat front row so had a real good look at them and like.
+            God the baggy shorts on the guy int he middle what has fashion come to</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image6.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Went to the post office to get my passport renewed and saw this, a fucking nigthmare.
+            Also i couldnt get it renewed this day because my printer cut off the last cm which has an important
+            barcode.</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image16.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">So i went to a different one the next day with the correct thing, and the woman kept
+            being like &ldquo;oh your middle names are so regal! Like a king!&rdquo;</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image8.jpg"
+                title=""></span></p>
+    <p class="c4"><span class="c1">Ok so remember when i was like &ldquo;whose going to oasis?&rdquo; well on the friday
+            i found a ticket for 80 bucks and then i was there saturday night, honestly i knew like barley any of the
+            songs but i had a blast! Wonderwall? Oh its beautiful to hear live. As is champaign supanova. At one point
+            the one who wears the hat lit up a ciggie and it was great. What wasnt great was the 3 hours it took for me
+            to get home because fuck sydney olympic park and fuck all the british people i had to endure in the crowd,
+            who were so annoying and also annoyed that the opener act was too aussie and liK EYOU ARE IN SYDNEY FUCK
+            OFF. GO BACK TO THE COLD AND DEPRESSING ENGLAND AND LIVE IN THE MISSERABLE GRAY DON&#39;T COME HERE AND THEN
+            COMPLAIN THAT THINGS AREN&#39;T THE SAME AS THEY ARE BACK HOME YOU MISSERABLE GITS. </span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image7.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Anyway sorry about that the big face from the airport is now seemingly in david jones
+            in the city which is scary</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image24.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Ok so one night we had wine and was just looking up my highschool and low and behold
+            we found an welcome to the school video for year 7&rsquo;s which was made for my friend owen&rsquo;s year.
+            And WHO TURNS UP IN IT BUT ME! (and emily but im the important one) was real spooky to just see me suddenly
+            from like 2011</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image2.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">I don&#39;t understand the gaming fan</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image18.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Its important to take pics like this so you can send them in group chats if someones
+            being gay (derogatory)</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image4.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">I went late night shopping with my fam and we were in the galleries in the cbd and i
+            was like &ldquo;why the fuck do i hear the oveture of wicked&rdquo; and it was fucking grilld just playing
+            it on loop</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image11.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Costco continues to be an living hell, the most fun was trying to lock two plants
+            into the kid thing</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image21.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">I spent a full 5 minutes watching these idiots try to put a mattress onto a lime
+            bike. Eventually they gave up and just walked away with it but i wouldve loved to have known the logic of
+            &ldquo;yeah the mattress and both of us can fit on the bike&rdquo; i shouldve gone down and watch</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image14.jpg" title=""></span></p>
+    <p class="c4"><span class="c1">Set up a new router at work and the fucker used a picture of a nexus 5 for my pixel 8
+            pro??? truly ubiquiti do better! (i do still have a 5, its a good phone - micro usb and outdated but its a
+            nice one)</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image22.jpg" title=""></span></p>
+    <p class="c4"><span>Went out for sarahs birthday drinks last night and ordered the &ldquo;tiki tiki bang bang&rdquo;
+            and the bartender looked so happy that she got to make it, and honestly. Im so annoyed because it was so
+            fucking drinkable. It was so sweet and good and it was like $200 but like oh man delish. One day the volcano
+            will be bought also the other bartender staring in the background is hilairous</span></p>
+    <h1 class="c2" id="h.fx24kjw9pyu6"><span class="c5">Media</span></h1>
+    <ul class="c6 lst-kix_le376ks6n71v-0 start">
+        <li class="c3 li-bullet-0"><span class="c1">The Lovers - ok so this show is pitched as &ldquo;what if
+                shakespeare midsummer night dream was pop&rdquo; and its a fine idea but it doesnt stick with it? Like
+                it flutters between being a faithful adaptation and a camp 90s boyband adaptation and i think thats
+                where it suffers? Also theyve fucked the pricing of this because it was half empty when i saw it but
+                there were some teens that looked excited and like it shouldve been packed with young people being
+                invigorated by it. </span></li>
+        <li class="c3 li-bullet-0"><span class="c1">Wake up dead man - the new knives out movie! It comes out on netflix
+                in dec but like god i loved it. I wont spoil it further than saying what it has to say about the church
+                is interesting and the way the lighting works in the church is outstanding. Also im now pumped more than
+                anything for glen close to make the sunset bulivard musical movie and to star in it because she is
+                outstanding and i can see her playing that desperation perfectly</span></li>
+        <li class="c3 li-bullet-0"><span class="c1">Frankenstine - i have never seen an frank adaptation, so i knew
+                nothing and oh man i had a blast. So much of the cinematography had me gripped and the creature was
+                fuckin outstanding. Also in one scene oscar isac wears a coat and hat and i was fully seated in the
+                cinema like &ldquo;oh i get it with him huh&rdquo; and had to spend the rest of the movie like &ldquo;oh
+                yeah ok yep fine man&rdquo;</span></li>
+        <li class="c3 li-bullet-0"><span class="c1">Escape from new york - this fits perfectly into the description of
+                movies from the 80s just being dirty. But kurt russel is so fuckin hot in it his introduction is so hot
+                and then ughk just a lot of fun and also like maybe its also attitude. </span></li>
+        <li class="c3 li-bullet-0"><span class="c1">Black bag - ok speaking of hot michal fastbander is so autistic
+                coded but also outstanding, this is a movie about a spy couple dealing with spy shit but its not like
+                &ldquo;oh im stalking this hotel room&rdquo; but its &ldquo;we have to have a conversation and work out
+                whose lying&rdquo; and its thrilling - there are multiple dinner parties and each is a delight</span>
+        </li>
+        <li class="c3 li-bullet-0"><span class="c1">Stranger Things s5 - ok so. Is it good? Not really, is it fun? I
+                don&#39;t know. I kinda just wanna see how it ends? But also there are at least 2 references to the
+                stage play i saw and im like &ldquo;how have they made a prequal and not done a proshoot&rdquo; because
+                theres a third reference that i know is coming that they havent touched yet but will be interesting. I
+                really think the time jump hurts it but also knowing that most of the cast hated it makes sense?</span>
+        </li>
+        <li class="c3 li-bullet-0"><span class="c1">Plur1bus - even if this show is just labeled as an big budget xfiles
+                show its still good! Do i know where its going? Not at all! The only theory i had was something about
+                carol being an author and creativity being important but now i think thats nothing so who knows! All i
+                know is im thrilled</span></li>
+        <li class="c3 li-bullet-0"><span class="c1">30 rock on shuffle - i put this on in the background while i was
+                doing chores and truly i think 30 rock is one of my favourite shows of all time, its so incredible and
+                funny and so many jokes come out of nowhere and still get me. Like im still laughing at an opening being
+                liz walking into jacks office saying &ldquo;jack the vending machine is broken&rdquo; and his reply is
+                &ldquo;I know, i broek it. I needed to speak with you and i knew it was the fastest way to get you up
+                here&rdquo; god i love it. Like the implication that instead of just finding her he went down the
+                building with an crowbar, wacked the machine and then waited my works doing an office themed christmas
+                party and people keep calling it the best comedy of all time and im keeping my mouth shut about 30 rock
+                as i don&#39;t think anyone else will understand it</span></li>
+        <li class="c3 li-bullet-0"><span class="c1">heated rivalry - ok so its very gay. The main guys are both hot but
+                the russian guy oh boy. I also think i hate it because its just like one sex scene and then 6 months of
+                them ghosting eachother. Will i keep watching it? Unclear, i will only know its on when my timeline is
+                flooded with gifs so who knows! </span></li>
+    </ul>
+    <h1 class="c2" id="h.bo86svi6qg7j"><span class="c5">That time i ate a tub full of oreo innards during a highschool
+            lunch</span></h1>
+    <p class="c4"><span class="c1">I was watching a video of someone ranking oreo products and i had the sudden
+            flashback to highshcool, mustve been like year 10? When Emily at lunch had a tub full of the innards of
+            oreos because her sister had made a cheese cake, and it was offered to me. Then she left and i proceeded to
+            eat all of it and she came back surprised and i felt so ill. Now why am i telling this story. Idk i think
+            its funny</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <h1 class="c2" id="h.s7qv0jhe9zpg"><span class="c5">Xmas</span></h1>
+    <p class="c4"><span class="c1">Ok so its coming up, i have found an gift im going to give everyone (its the same so
+            yall can stfu) i think i have everyones addresses or i will see you but if i don&#39;t and you want it then
+            uh idk lemme know i should probs figure out how to post them sooner rather than later huh</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <h1 class="c2" id="h.9m376o6n0km5"><span class="c5">Some shit i saw on twitter that i just wanna share</span></h1>
+    <p class="c4"><span><img alt="" src="images/image17.png" title=""></span></p>
+    <p class="c4"><span><img alt="" src="images/image23.png" title=""></span></p>
+    <p class="c4"><span><img alt="" src="images/image20.png" title=""></span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image1.png" title=""></span></p>
+    <p class="c4"><span class="c1">Oh also this one, its a wild throwback to the 2020 sondheim birthday zoom stream
+            where these three sung the ladies who lunch. Theres Christine Baranski wearing headphones in a way i
+            didn&#39;t think was possible, Meryl Streep&#39;s office has a printer and a seagull, and Audra McDonald
+            just did it seemingly from the floor in her loungeroom.</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image12.png" title=""></span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span class="c1">Anyway this wont be an recurring segment i just thought about a few tweets that made
+            me chuckle </span></p>
+    <h1 class="c2" id="h.ttkmnaydplt6"><span class="c5">Outro</span></h1>
+    <p class="c4"><span class="c1">Ok so next up its december! Im hosting an game show at my works christmas party which
+            is mostly done and oh god i havent done the iphone cookie thing yet ok i have to fix that (safari on mobile
+            wont let you store to cookies you have to use local storage) OH ALSO METROID PRIME IS OUT ON THURSDAY im
+            very hype for that, have i finished the first one yet? No! So i guess im diving in and ill just figure it
+            out. Anyway until next time. Keep on gaming gamers</span></p>
+    <p class="c0"><span class="c1"></span></p>
+    <p class="c4"><span><img alt="" src="images/image5.gif" title=""></span></p>
+</body>
+
+</html>
