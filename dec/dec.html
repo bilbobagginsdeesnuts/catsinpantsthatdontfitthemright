@@ -1,0 +1,426 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A JackDavenport Ramble">
+    <meta property="og:description" content="June 2024 Updates!">
+    <meta name="theme-color" content="#D7263D">
+
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .c5 {
+            font-weight: bold;
+        }
+
+        span.c3 {
+            font-weight: bold;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-y: scroll;
+            height: 100%;
+            font: 100%/1.5 sans-serif;
+            word-wrap: break-word;
+            margin: 0 auto;
+            padding: 1.5em;
+        }
+
+        @media (min-width: 768px) {
+            html {
+                font-size: 125%;
+                max-width: 69em;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 2.5rem 2rem 1.5rem 2rem;
+            line-height: 1.25;
+            color: #333;
+            font-family: "Arvo", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        a {
+            color: #fa6432;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 1em 3.5em;
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            line-height: 1.5;
+            font-family: "Josefin Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p code {
+            background-color: #eee;
+            padding: 0.05em 0.2em;
+            border: 1px solid #ccc;
+        }
+
+        ol,
+        ul {
+            margin: 1em;
+        }
+
+        ol li ol,
+        ol li ul,
+        ul li ol,
+        ul li ul {
+            margin: 0 2em;
+        }
+
+        ol li p,
+        ul li p {
+            margin: 0;
+        }
+
+        dl {
+            font-family: monospace, monospace;
+        }
+
+        dl dt {
+            font-weight: bold;
+        }
+
+        dl dd {
+            margin: -1em 0 1em 1em;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            -webkit-box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+            box-shadow: 5px 5px 22px -5px rgba(0, 0, 0, 0.39);
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            padding-left: 1em;
+            font-style: italic;
+            border-left: solid 1px #fa6432;
+        }
+
+        table {
+            font-size: 1rem;
+            text-align: left;
+            caption-side: bottom;
+            margin-bottom: 2em;
+        }
+
+        table * {
+            border: none;
+        }
+
+        table thead,
+        table tr {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        table tr:nth-child(even) {
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        table tbody {
+            display: block;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        table td,
+        table th {
+            padding: 0.25em;
+        }
+
+        table,
+        .highlight>pre,
+        pre.example {
+            max-height: 70vh;
+            margin: 1em 0;
+            padding: 1em;
+            overflow: auto;
+            font-size: 0.85rem;
+            font-family: monospace, monospace;
+            border: 1px dashed rgba(250, 100, 50, 0.5);
+        }
+
+        .title {
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 0.75em;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: -1.5rem;
+            padding-bottom: 1.5em;
+        }
+
+        .tags li {
+            display: inline;
+            margin-right: 0.5em;
+        }
+
+        figure {
+            margin: 1em 0;
+        }
+
+        figure figcaption {
+            font-family: monospace, monospace;
+            font-size: 0.75em;
+            text-align: center;
+            color: grey;
+        }
+
+        .footnote-definition sup {
+            margin-left: -1.5em;
+            float: left;
+        }
+
+        .footnote-definition .footnote-body {
+            margin: 1em 0;
+            padding: 0 1em;
+            border: 1px dashed rgba(250, 100, 50, 0.3);
+            background-color: rgba(200, 200, 200, 0.2);
+        }
+
+        .footnote-definition .footnote-body p:only-child {
+            margin: 0.2em 0;
+        }
+
+        .posts {
+            margin: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body class="c6 doc-content">
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>Eyo its the end of the year! December! Im writing this at 10:32am whilst staring at the booze im
+            planning on polishing off 12 hours from now and i know that im gonna send this out at 11:59pm again so happy
+            new year. Lets get started</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c7" id="h.k7otgex3d82y"><span class="c3">Photos</span></h1>
+    <p class="c1"><span><img alt="" src="images/image4.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">A big theme for the start of this month was my works christmas party, I love this
+            costume i made for the gameshow host for my work christmas party, i forgot about the hat in the end but the
+            jacket that doesnt fit is a wonderful vibe</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image6.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">I don&#39;t know why i put this flyer from the prime minister in the sink but it felt
+            good</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image15.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Oh god on the friday night before my works christmas conference on the monday i spent
+            an few hours making these blades (based on the company logo) and then went to hang them up in the empty
+            office we were using for the conference</span></p>
+    <p class="c1"><span><img alt="" src="images/image5.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">I thought it would make the room look and feel less empty but i was so wrong it
+            looked just as depressing</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image7.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">The game i made was fun tho, i made it windows xp themed because the whole thing was
+            based on the us office (i had to bite my tongue so often as people said it was better than 30 rock and parks
+            and rec)</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image14.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">One of my bosses made the jelly stapler and it was a wild choice, no one ate it at
+            all but i egged her on into flipping it and running it</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image1.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">They also made us all wear these tshirts for the 2nd day of the conference so i
+            rebelled and wore this shirt over it and the neckerchief as i don&#39;t wear
+            black!</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image2.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">We went to a real fancy place for lunch and god it was embarrassing everyone wearing
+            the same shirt but i survived, they had a big tree! And it was greek and we ended up drinking 2.5 bottles of
+            white wine and 3 bottles of red just between 7 of us</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image3.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">Continuing my grandmothers tradition of making snowballs for christmas i do love them
+            so, theyre somewhat a pain to make (only because of the mess) but damn are they nice. Also i remember my
+            grandmother once being like &ldquo;no don&#39;t buy the cheap coconut get the good stuff&rdquo; and having
+            made it on both the cheap and good stuff she isnt wrong, youve gotta use the good stuff otherwise the
+            texture is dogshit</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image10.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">During one of the 40c days i mcguivered this hood onto the top of a portable ac to
+            run it from my bathroom into my lounge room, it worked! Except the piping was made ofa foil so it got very
+            condensed and also it didnt really cool the apartment down but hey. Summer in the city and all that</span>
+    </p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image8.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">At christmas my mum had an old art book of mine and i used to be an true
+            artist</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image9.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">I spent christmas night and boxing day with my mum as she house and cat sit for a
+            friend, and felix (the cat) was such a friendly motherfucker it was wild, he fell asleep in my legs at one
+            point and i loved it but also was like &ldquo;no but i have the adhd urge to move what do i do&rdquo;</span>
+    </p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image12.jpg" title=""></span></p>
+    <p class="c1"><span class="c0">And finally, yea thats right. Im a gamer</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c7" id="h.fx24kjw9pyu6"><span class="c3">Media</span></h1>
+    <ul class="c4 lst-kix_le376ks6n71v-0 start">
+        <li class="c1 c5 li-bullet-0"><span class="c0">Pluribus - i really loved this, do i think the lesbian shippers
+                on twitter are somwhat misguided in their beliefs? Yes. however i think this show has got some gas in
+                it! Rhea Seehorn plays it so well and im excited for this show to get a few more seasons and then
+                hopefully take a bow out before it gets too long in the tooth, oh whats that next oh huh</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Stranger things s5 part 2 - this was less of an enjoyable watch
+                and more of an exercise in the sunk cost fallacy. I hate it and i think it needs to die. The crazy thing
+                is how much of this season i was like &ldquo;Wait i already know this?&rdquo; and that is purely down to
+                having seen the stage play which already setup a few things that i wont spoil here just incase anyone
+                cares. </span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Love actually - this movie felt like adhd, ive never seen it
+                before but it was great. I finally got why people wanted to fuck alan rickman and also hugh grant, the
+                way everything kept stringing together was lovely and rowan atkinson as a christmas angel being is
+                wonderful (fucking rickman)</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Five nights at freddies 2 - was this a masterpiece? No! Did it do
+                the sequel thing of doing the first movie again but now because its a franchise it has to setup things
+                for potential sequels? Yes! Anyway was a delight and the puppet can go fuck itself, but it was lovely to
+                watch with friend mae</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Avatar 3 - was this good? I don&#39;t know? I enjoyed it but like
+                objectively was it good? It was clear that its part 2 of the avatar 2 script thats for sure but like, it
+                was fun! Jake looked hot in the helicopter scene and the goth lady was funny but i don&#39;t know what
+                else to say. I was sad when the hot air balloon went down tho</span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Fallout s2 - so far its been fun! Again hate that people on
+                twitter are shipping lucy and the ghoul because ew but its still a bit of fun! </span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Metroid prime 4 beyond - did i finish the first prime game before
+                this came out? No. have i now finished 4? Yes. it was fun! Clearly inspired far too much by breath of
+                the wild in terms of the big desert and the four temples but hey, theres a bit where samus looses her
+                new suit and it goes back to being orange and i out loud to myself went &ldquo;fuck that suit is
+                iconic&rdquo; </span></li>
+        <li class="c1 c5 li-bullet-0"><span class="c0">Dogpile - game good, you drop dogs in an pile (like suika not
+                2048 as 2048 is a grid fuck you eric) and then you get balatro like upgrades - is good!! Its been out
+                for a few weeks and im already at 24.6 hours</span></li>
+    </ul>
+    <h1 class="c7" id="h.bo86svi6qg7j"><span class="c3">On the topic of yodelling</span></h1>
+    <p class="c1"><span class="c0">All of you should&rsquo;ve received the gift and hopefully opened it on christmas
+            day. I hope you all enjoy the cassette tape which i think only one or two of you will actually be able to
+            listen to but for the rest of you isnt it a fun thing to have on a shelf! </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">The back story to this was i was at reverse garbage (A likely place for me to be) and
+            they had a tub full to the brim with these tapes. And suddenly it hit me that like. Thats a good bit! So i
+            bought 20 tapes, wrapped them individually (some of them are better than others wrapping wise and thats
+            purely down to the fact i got better as i went) and then started the tedious process of getting them to you
+            all. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span><img alt="" src="images/image13.jpg" title=""></span><span><img alt="" src="images/image11.jpg"
+                title=""></span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Some of you aren&#39;t in australia so that was an annoying trip to the post office
+            filling out custom forms and also currently if your shipping to america you cant just use the online form
+            you have to tlak to the man so that was an entire lunch break but its good! Then the domestic ones were not
+            as annoying but it still took me half an hour to fill in all the envelopes and then legit 10 mins at the
+            counter for them all to be scanned in. and for the sydney friends well i can just see you guys so its not
+            hard. But i did have them in my bag when i saw avatar 3 so thats fun. And two people immediately tried to
+            open them upon receiving them but they whats christmas! </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">So anyway im writing this before christmas so im excited to in like oh god its 10pm,
+            one of you is gonna open it at the stroke of midnight im calling it now. But in the morning i excited to
+            start receiving bewildered messages of &ldquo;jack wtf is this&rdquo; and i will just be laughing musically
+        </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c7" id="h.h7xya1lr3tq5"><span class="c3">On the topic of my grandparents trying to solve the drama i have
+            with my dad at christmas lunch</span></h1>
+    <p class="c1"><span class="c0">(im just gonna put a warning here that this contains strong language, why? I dunno
+            but part of me is like &ldquo;well emily has a baby and what if the baby somehow reads this even tho the
+            baby is 8 months old anyway for th rest of you fuck shit piss cunt)</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">God i have so much to scream about this, im writing this on christmas eve but
+            yesterday i finally talked to my mum about the email i received from my grandfather which is below. My mums
+            reaction was &ldquo;ok jack you have to just shut up and do the handshake to appease them but we are going
+            to do it in private and not infront of the extended family&rdquo; and i kept bemoaning that i am not ready
+            to actually forgive him and that im fucking pissed off at my grandparents for trying to insert themselves in
+            as mediators when they refuse to actually hear my side and just keep insisting that i should forgive and
+            forget because their cunt of a son can do no wrong. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Ok sorry got heated there but anyway that was a fun way to ruin a christmas eve eve
+            shopping trip with my mum, but eventually i drive home and i start stewing on all the things im pissed at
+            him for and end up having to pull over and reply to the email saying no because i was on the verge of tears
+            just driving home just thinking about this. And then he fucking replied saying &ldquo;oh no i wasnt asking
+            for an actual handshake heaven no&rdquo;</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">So my fucking grandfather esentially just sent a boomer bible quote as a like
+            &ldquo;build a bridge and get over it&rdquo; thing which was not at all what any of us interpreted it as.
+            And now i have to go to christmas lunch with them. Yipee. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span>Update, it went fine and turns out i misread the email and the email was basically &ldquo;oht he
+            bondi attack scared me jack you should just build a bridge and get over it&rdquo; fun times</span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c7" id="h.bkgrf75f69wo"><span class="c3">Paddington bear the musical</span></h1>
+    <p class="c1"><span class="c0">I am 7 minutes into this and i have spent most of it in tears? The bear is so fucking
+            cute and the way his revealed is so nice?? I think the reason its fucking me up so much is that when i was a
+            kid my great grandmother in england didnt know what to sent me so i was sent tellitubies and padington bear
+            vhs&rsquo;s that were tapped off the tv and then toys along with it which like. a) super smart, wanna make
+            sure the kid gets the reference? Send the source. b) i also remember not being able to read her handwriting
+            except once when she wrote in block letters for me and it was so nice sorry this is now just me remembering
+            great granny davenport, she always wrote in these like airmail letters which were blue and tri fold. Also
+            when she died her ashes were scattered off Dunoon in scotland so when my mum and i went last year we went to
+            glasgow to pay our respects and itw as nice (even tho we were just on the water because getting to dunoon
+            wouldve been so annoying) - also we had a drink and my mum full on said &ldquo;oh she was a big drinker she
+            wouldve loved this&rdquo; so thats nice. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <h1 class="c7" id="h.7pddsvrjpsoh"><span class="c3">Conclusion</span></h1>
+    <p class="c1"><span class="c0">Well thats it. What does next year bring? If i had to guess a january, then a
+            february, then a march. Then i think its april. Then wouldnt you know it but its may. Then oh whats that
+            around the corner oh its june wait why isnt it wearing pants oh no. ok then theres july it also winnie the
+            poohing whats going on. Ok august is there and its got pants on phew wait are they assles chaps whats going
+            on, ok september is here and is wearing pants thank god. October is next and its wearing shorts thats fine,
+            november! Oh a sight for sore eyes its wearing speedos. And then theres december but i cant seem to see it
+            so thats a worry. </span></p>
+    <p class="c1 c2"><span class="c0"></span></p>
+    <p class="c1"><span class="c0">Anyway love you all im probs drunk now and you probs will hear that again from me at
+            some point while drunk</span></p>
+</body>
+
+</html>
